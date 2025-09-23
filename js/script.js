@@ -90,7 +90,7 @@ class Project {
                             ${this.descriptionList}
                         </ul>
                     </div>
-                    ${this.secImgs.map(img => `<img class="sec-img" src="${img}" alt="">`).join('')}
+                    ${this.secImgs.map(img => `<img class="sec-img" src="${img}">`).join('')}
                     <div class="sec-text">
                         <h4>${this.resultTitle}</h4>
                         <p>
