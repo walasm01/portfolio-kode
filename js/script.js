@@ -90,7 +90,7 @@ class Project {
                             ${this.descriptionList}
                         </ul>
                     </div>
-                    ${this.secImgs.map(img => `<img class="sec-img" src=${img}" alt="">`).join('')}
+                    ${this.secImgs.map(img => `<img class="sec-img" src="${img}" alt="">`).join('')}
                     <div class="sec-text">
                         <h4>${this.resultTitle}</h4>
                         <p>
@@ -106,3 +106,30 @@ class Project {
         `;
     }
 }
+
+
+const cameleonCreative = new Project({
+    title: "CAMELEON CREATIVE",
+    undertitle: "IBA Multimediedesigner</br>1. Semester, 1. Projekt",
+    mainImg: "img/cc-phone-and-pc-mockup.png",
+    mainAltText: "Cameleon Creative hjemmeside på PC og mobil",
+    descriptionTitle: "Et Multimediebureau",
+    description: 
+        "Dette var et gruppeprojekt, hvor formålet var at lave en brandstrategi og en visuel kampagne for vores eget nystartede multimediebureau. I projektet har vi arbejdet iterativt med bl.a.:",
+    descriptionList: `
+        <li>Udarbejdelse af visuelle elementer for brandet, såsom logo, lavet i Adobe Illustrator</li>
+        <li>En high-fidelity visuel prototype af et responsivt website på figma</li>
+        <li>En designmanual for vores brand, lavet i Adobe InDesign</li>`,
+    secImgs: ["img/cc-visitkort.png", "img/cc-designguide-mockup.png"],
+    resultTitle: "Min rolle",
+    result: 
+        "Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Hele brandet er baseret på kamæleonen, da den er et symbol på kreativitet. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.",
+    icons: ["img/figma.png", "img/illustrator.png", "img/indesign.png"]
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const projectsSection = document.querySelector(".projects");
+    if (projectsSection) {
+        projectsSection.insertAdjacentHTML("beforeend", cameleonCreative.display());
+    }
+})

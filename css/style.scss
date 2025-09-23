@@ -327,7 +327,7 @@ footer {
         animation: fade-in forwards;
         animation-timeline: view();
         animation-range-start: entry;
-        animation-range-end: 40%;
+        animation-range-end: 50%;
     }
     @keyframes fade-in {
         to {
