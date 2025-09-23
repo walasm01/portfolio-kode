@@ -58,7 +58,7 @@ p, li {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
 }
 header nav {
   display: flex;
@@ -73,9 +73,6 @@ header nav #logo {
 header nav i {
   color: #F8FCFF;
   font-size: 35px;
-}
-header #hero {
-  padding: 0 2rem;
 }
 header #hero .cursive {
   color: #91FF72;
@@ -171,6 +168,9 @@ header #hero .cursive {
 .projects .project-content .sec-content {
   display: grid;
   gap: 2rem;
+}
+.projects .project-content .sec-content img:nth-of-type(2) {
+  grid-area: 4/1/5/2;
 }
 .projects .project-content .icons {
   padding-top: 0;
