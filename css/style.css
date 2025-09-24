@@ -256,6 +256,9 @@ footer {
   #my-skills .skill-category .icons .icon {
     max-width: 4rem;
   }
+  .projects-section .projects-intro {
+    margin-bottom: 8rem;
+  }
   .projects-section .projects .project-content {
     display: grid;
     grid-template-columns: 1fr 1fr;

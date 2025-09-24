@@ -339,6 +339,9 @@ footer {
     }
 
     .projects-section {
+        .projects-intro {
+            margin-bottom: $lg-space;
+        }
         .projects {
             .project-content {
                 display: grid;
