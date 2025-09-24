@@ -49,7 +49,6 @@ class Project {
         mainImg, 
         mainAltText, 
         secImgs, 
-        secAltText, 
         description, 
         descriptionTitle, 
         descriptionList, 
@@ -62,7 +61,6 @@ class Project {
         this.mainImg = mainImg;
         this.mainAltText = mainAltText;
         this.secImgs = secImgs;
-        this.secAltText = secAltText;
         this.description = description;
         this.descriptionTitle = descriptionTitle;
         this.descriptionList = descriptionList;
@@ -99,7 +97,10 @@ class Project {
                     </div>
                 </div>
                 <div class="icons">
-                    ${this.icons.map(icon => `<img class="icon" src="${icon}" alt="">`).join('')}
+                    <p class="icons-text">Disse programmer har jeg brugt i projektet:</p>
+                    <div class="icon-container">
+                        ${this.icons.map(icon => `<img class="icon" src="${icon}" alt="">`).join('')}
+                    </div>
                 </div>
             </div>
         </section>
@@ -110,8 +111,27 @@ class Project {
 
 const cameleonCreative = new Project({
     title: "CAMELEON CREATIVE",
-    undertitle: "IBA Multimediedesigner</br>1. Semester, 1. Projekt",
+    undertitle: "IBA Multimediedesigner</br>2. Semester, 1. Projekt",
     mainImg: "img/cc-phone-and-pc-mockup.png",
+    mainAltText: "Cameleon Creative hjemmeside på PC og mobil",
+    descriptionTitle: "Et Multimediebureau",
+    description: 
+        "Dette var et gruppeprojekt, hvor formålet var at lave en brandstrategi og en visuel kampagne for vores eget nystartede multimediebureau. I projektet har vi arbejdet iterativt med bl.a.:",
+    descriptionList: `
+        <li>Udarbejdelse af visuelle elementer for brandet, såsom logo, lavet i Adobe Illustrator</li>
+        <li>En high-fidelity visuel prototype af et responsivt website på figma</li>
+        <li>En designmanual for vores brand, lavet i Adobe InDesign</li>`,
+    secImgs: ["img/cc-visitkort.png", "img/cc-designguide-mockup.png"],
+    resultTitle: "Min rolle",
+    result: 
+        "Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Hele brandet er baseret på kamæleonen, da den er et symbol på kreativitet. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.",
+    icons: ["img/figma-sticker-v2.png", "img/illustrator-sticker-v2.png", "img/indesign-sticker-v2.png", "img/photoshop-sticker.png", "img/aftereffect-sticker.png", "img/wordpress-sticker.png"]
+});
+
+const datasikkerhed = new Project({
+    title: "SPILLET OM DATASIKKERHED",
+    undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
+    mainImg: "img/datasikkerhed-laptop-and pc-mockup-v3.png",
     mainAltText: "Cameleon Creative hjemmeside på PC og mobil",
     descriptionTitle: "Et Multimediebureau",
     description: 
@@ -131,5 +151,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const projectsSection = document.querySelector(".projects");
     if (projectsSection) {
         projectsSection.insertAdjacentHTML("beforeend", cameleonCreative.display());
+        projectsSection.insertAdjacentHTML("beforeend", datasikkerhed.display());
     }
 });
