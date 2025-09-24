@@ -17,7 +17,7 @@ body {
   padding: 2rem 0;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 h1, h2, h3 {
@@ -144,7 +144,9 @@ header #hero .cursive {
   padding-bottom: 0;
 }
 #my-skills .skill-category .icons .icon {
-  max-width: 3rem;
+  max-width: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .projects {
@@ -176,7 +178,7 @@ header #hero .cursive {
   padding-top: 0;
 }
 .projects .project-content .icons .icon {
-  max-width: 2rem;
+  max-width: 5rem;
 }
 
 footer {

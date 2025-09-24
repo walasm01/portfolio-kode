@@ -124,7 +124,7 @@ const cameleonCreative = new Project({
     resultTitle: "Min rolle",
     result: 
         "Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Hele brandet er baseret på kamæleonen, da den er et symbol på kreativitet. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.",
-    icons: ["img/figma.png", "img/illustrator.png", "img/indesign.png"]
+    icons: ["img/figma-sticker-v2.png", "img/illustrator-sticker-v2.png", "img/indesign-sticker-v2.png", "img/photoshop-sticker.png", "img/aftereffect-sticker.png", "img/wordpress-sticker.png"]
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -132,4 +132,4 @@ document.addEventListener("DOMContentLoaded", () => {
     if (projectsSection) {
         projectsSection.insertAdjacentHTML("beforeend", cameleonCreative.display());
     }
-})
+});
