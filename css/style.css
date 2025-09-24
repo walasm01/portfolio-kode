@@ -61,6 +61,15 @@ p, li {
   font-weight: 200;
 }
 
+a {
+  color: #F8FCFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8FCFFF;
+}
+
 .cursive {
   font-family: "Aguafina Script", arial, sans-serif;
   font-size: 30px;

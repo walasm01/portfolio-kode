@@ -77,6 +77,13 @@ p, li {
     font-family: 'DM Sans', arial, sans-serif;
     font-weight: 200;
 }
+a {
+    color: $off-white;
+    text-decoration: none;
+}
+a:hover {
+    color: $light-blue;
+}
 .cursive {
     font-family: 'Aguafina Script', arial, sans-serif;
     font-size: 30px;
