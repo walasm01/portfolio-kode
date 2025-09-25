@@ -234,7 +234,10 @@ footer {
   border: 2px solid #F8FCFF;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 60px;
+  }
   .main-section {
     margin-bottom: 12rem;
     padding: 0 4rem;
@@ -327,7 +330,7 @@ footer {
     max-width: 4rem;
   }
   .projects-section .projects-intro {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
   .projects-section .projects .project-content {
     display: grid;
