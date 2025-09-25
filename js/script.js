@@ -147,7 +147,7 @@ const datasikkerhed = new Project({
     resultTitle: "Et responsivt resultat",
     result: 
         "Jeg endte med at lave et spil om datasikkerhed, hvor man ville blive præsenteret for forskellige “Smishing” (SMS phishing) scenarier med forskellige svarmuligheder. Ud fra hvad man svarede kunne man få 6 forskellige slutninger.",
-    icons: ["img/figma-sticker-v2.png", "img/html5-sticker.png", "img/css3-sticker.png", "img/js-sticker.png"]
+    icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png", "img/js-sticker.png"]
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -157,3 +157,11 @@ document.addEventListener("DOMContentLoaded", () => {
         projectsSection.insertAdjacentHTML("beforeend", datasikkerhed.display());
     }
 });
+
+const burger = document.getElementById("burger");
+const navMenu = document.getElementById("nav-menu");
+
+burger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    document.body.classList.toggle("no-scroll");
+})

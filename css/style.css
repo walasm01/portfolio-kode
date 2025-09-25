@@ -4,8 +4,13 @@
 }
 
 body {
-  background-color: #000222;
+  background-color: black;
   color: #F8FCFF;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
 
 .main-section {
@@ -83,15 +88,41 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5rem;
+  background-color: black;
+  width: 100%;
   padding: 2rem;
+  position: fixed;
+  z-index: 100;
 }
 header nav #logo {
   max-width: 3rem;
 }
-header nav i {
+header nav #burger {
   color: #F8FCFF;
+  font-size: 2rem;
+}
+header nav #nav-menu {
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  padding-left: 2rem;
+}
+header nav #nav-menu.active {
+  display: flex;
+}
+header nav #nav-menu li {
+  font-family: "Climate Crisis", arial, sans-serif;
   font-size: 35px;
+  list-style-type: none;
+}
+header #hero {
+  padding: 12rem 2rem;
 }
 header #hero .cursive {
   color: #91FF72;
@@ -209,7 +240,28 @@ footer {
     padding: 0 4rem;
   }
   header nav {
-    padding: 4rem;
+    padding: 2rem 4rem;
+  }
+  header nav #logo {
+    max-width: 3rem;
+  }
+  header nav #burger {
+    display: none;
+  }
+  header nav #nav-menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    padding-left: 0;
+  }
+  header nav #nav-menu li {
+    font-size: 20px;
+  }
+  header #hero {
+    padding: 15rem 4rem;
   }
   #my-skills {
     gap: 8rem;
@@ -262,6 +314,15 @@ footer {
   }
 }
 @media screen and (min-width: 1700px) {
+  header nav {
+    padding: 4rem;
+  }
+  header nav #nav-menu li {
+    font-size: 35px;
+  }
+  header #hero {
+    padding: 15rem 4rem;
+  }
   #my-skills .skill-category .icons .icon {
     max-width: 4rem;
   }
