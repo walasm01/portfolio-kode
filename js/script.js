@@ -151,7 +151,7 @@ const datasikkerhed = new Project({
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const projectsSection = document.querySelector(".projects");
+    const projectsSection = document.getElementById("projects-container");
     if (projectsSection) {
         projectsSection.insertAdjacentHTML("beforeend", cameleonCreative.display());
         projectsSection.insertAdjacentHTML("beforeend", datasikkerhed.display());

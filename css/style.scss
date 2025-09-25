@@ -23,6 +23,11 @@ $pc-grid-gap: 3rem;
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 14rem;
+}
+
 body {
     background-color: black;
     color: $off-white;
@@ -100,7 +105,6 @@ a:hover {
 header {
     min-height: 100vh;
 
-    // NAVIGATION ---------------------------------------
     nav {
         display: flex;
         justify-content: space-between;
@@ -154,63 +158,43 @@ header {
     }
 }
 
-// WLA ---------------------------------------------------------
+#intro-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $sm-space;
 
-/*
-#initials {
-
-    // INITIALS GENEREL ----------------------------------------
-    .initials-title {
-        position: relative;
-
-        .cursive {
-            font-size: 50px;
-            position: absolute;
-            bottom: 0;
-        }
+    p{
+        text-align: center;
     }
 
-    .initials-section {
-        padding: 1rem $padding;
-    }
+    #cards-container {
+        display: flex;
+        gap: $sm-space;
+        justify-content: center;
+        flex-wrap: wrap;
 
-    // W-SEKTION ---------------------------------------------
-    #w-section {
-        
-        .cursive {
-            color: $light-green;
-        }
-        h2 {
-            color: $light-red;
-        }
-    }
+        .card {
+            border-radius: 10px;
+            background-color: $off-white;
+            color: black;
+            padding: $m-space;
+            position: relative;
 
-    // L-SEKTION ----------------------------------------------
-    #l-section {
-
-        .cursive {
-            color: $light-blue;
-        }
-        h2 {
-            color: $light-yellow;
-        }
-    }
-
-    // A-SEKTION ---------------------------------------------
-    #a-section {
-
-        .cursive {
-            color: $light-red;
-        }
-        h2 {
-            color: $light-green;
+            img {
+                max-width: 5rem;
+                position: absolute;
+                right: 10%;
+            }
         }
     }
 }
-*/
+
 
 // HVAD KAN JEG? ------------------------------------------
-#my-skills {
+#skills-section {
     display: grid;
     gap: $m-space;
 
@@ -233,9 +217,9 @@ header {
 
 // PROJEKTER -----------------------------------------
 
-.projects-section {
+#projects-section {
 
-    .projects-intro {
+    #projects-intro {
         margin-bottom: $sm-space;
     }
 
@@ -243,7 +227,7 @@ header {
         color: $light-red;
     }
     
-    .projects {
+    #projects-container {
         display: grid;
         gap: $m-space;
 
@@ -292,7 +276,7 @@ footer {
     border: 2px solid $off-white;
 }
 
-// @media screen and (min-width: 800px)
+// @media screen and (min-width: 800px) ------------------------------------------------------------------
 
 @media screen and (min-width: 700px) {
     
@@ -337,12 +321,12 @@ footer {
         }
     }
 
-    #my-skills {
+    #skills-section {
         gap: $lg-space;
     }
 
-    .projects-section {
-        .projects {
+    #projects-section {
+        #projects-container {
             gap: $lg-space;
 
             .project-content {
@@ -414,7 +398,7 @@ footer {
         }
     }
 
-    #my-skills {
+    #skills-section {
         .skill-category {
             .icons {
                 .icon {
@@ -424,11 +408,11 @@ footer {
         }
     }
 
-    .projects-section {
-        .projects-intro {
+    #projects-section {
+        #projects-intro {
             margin-bottom: $m-space;
         }
-        .projects {
+        #projects-container {
             .project-content {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -453,6 +437,8 @@ footer {
         }
     }
 }
+
+// ANIMATIONER ------------------------------------------------------------------------------
 
 @media (prefers-reduced-motion: no-preference) {
     .skill-category {

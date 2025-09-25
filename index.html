@@ -13,6 +13,7 @@
 </head>
 <body>
 
+    <!--Navigation og Hero--------------------------------------------------------------------------------->
     <header>
         <nav>
             <!--Logo-->
@@ -37,66 +38,34 @@
     </header>
 
     <main>
-        <!--3 kort over WLA---------------------------------------------------------->
-        
-        <!--
 
-        <section id="initials">
-            <section class="initials-section" id="w-section">
-                <div class="initials-title">
-                    <h2>
-                        WHOLE-</br>HEARTED
-                    </h2>
-                    <p class="cursive">Hel-hjertet</p>
-                </div>
-                <p class="undertitle">DESIGN med hele hjertet</p>
-                
-                <p>
-                    Jeg designer med hele hjertet. Jeg ser ikke design som et overfladisk middel for marketing. Det skal have betydning, fordi det er betydning vi så ivrigt stræber efter i vores hverdag. Hvis et design er LAVET med værdi, så kan det også GIVE værdi.
-                </p>
-            </section>
-
-            <section class="initials-section" id="l-section">
-                <div class="initials-title">
-                    <h2>
-                        LIMIT-</br>LESS
-                    </h2>
-                    <p class="cursive">Ubegrænset</p>
-                </div>
-                <p class="undertitle">UDVIKLING med en ubegrænset værktøjskasse</p>
-                <p>
-                    Et værdifuldt design kræver hjerte, men også hjerne. Det hele starter med en idé. At kunne eksekvere på denne idé, kræver et komplet sæt af værktøjer. Med kodning i HTML, CSS og JS, samt brug af Wordpress, og design vha. Adobe-pakken, (og en vilje til at lære nye værktøjer at kende) er jeg ubegrænset i min eksekvering af idéer og tilegnelse af nye skills.
-                </p>
-            </section>
-            
-            <section class="initials-section" id="a-section">
-                <div class="initials-title">
-                    <h2>
-                        AUTHEN-</br>TICITY
-                    </h2>
-                    <p class="cursive">Autencitet</p>
-                </div>
-                <p class="undertitle">BRANDING med autencitet</p>
-                <p>
-                    Vigtigst af alt er at man viser essensen af ens brand, når der designes. Modtageren skal have fået et konsistent og klart indtryk af dit brand, hvem du er. Modtageren skal komme så tæt på din autentiske kerne som muligt ved at komme helt ind til sjælen af dit brand. Dette er kernen i min designprocess.
-                </p>
-            </section>
+        <section class="main-section" id="intro-section">
+            <p class="undertitle">Klik på en af dem for at læse mere:</p>
+            <div id="cards-container">
+                <a href="#skills-section" class="card">
+                    <p class="undertitle">Skills</p>
+                    <img src="img/illustrator-sticker-v2.png" alt="">
+                </a>
+                <a href="#projects-section" class="card">
+                    <p class="undertitle">Projekter</p>
+                    <img src="img/photoshop-sticker.png" alt="">
+                </a>
+                <a href="#me-section" class="card">
+                    <p class="undertitle">Hvem</p>
+                    <img src="img/indesign-sticker-v2.png" alt="">
+                </a>
+            </div>
         </section>
 
-        -->
-
-
-        <!--Hvad kan jeg?---------------------------------------------------------->
-
-        <section class="main-section" id="my-skills">
-            <div id="my-skills-intro">
-                <div id="my-skills-title">
+        <!--Hvad kan jeg?-------------------------------------------------------------------------------------->
+        <section class="main-section" id="skills-section">
+            <div id="skills-intro">
+                <div id="skills-title">
                     <h2>HVAD KAN JEG?</h2>
                     <p class="cursive">Mit Skill-set</p>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni magnam quidem vel numquam, expedita aspernatur inventore asperiores eaque molestiae voluptatem libero, minus in molestias placeat. Quia, libero facere. Consequuntur, officia!</p>
             </div>
-
             <section class="skill-category" id="graphic-design">
                 <h3>GRAFISK DESIGN</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aperiam temporibus iusto c</p>
@@ -108,7 +77,6 @@
                     <img class="icon" src="img/aftereffect-sticker.png" alt="Adove After Effects ikon">
                 </div>
             </section>
-
             <section class="skill-category" id="web-dev">
                 <h3>WEB UDVIKLING</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius est, officiis placeausdam.</p>
@@ -119,107 +87,26 @@
                     <img class="icon" src="img/wordpress-sticker.png" alt="Wordpress ikon">
                 </div>
             </section>
-            
         </section>
-        <!--Vis ikoner med navne, samt en "level-bar" for at indikere, hvor godt jeg kan bruge de forskellige programmer-->
 
-        <!--Fremhævede Projekter-->
-        <section class="projects-section main-section">
-            <div class="projects-intro">
-                <div class="projects-title">
+        <!--Projekter--------------------------------------------------------------------------------->
+        <section class="main-section" id="projects-section">
+            <div id="projects-intro">
+                <div id="projects-title">
                     <h2>PROJEKTER</h2>
                     <p class="cursive">Skills i Praksis</p>
                 </div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dolore placeat, veniam culpa doloribus earum error est tempora perspiciatis expedita veritatis, alias omnis quaerat excepturi ab pariatur rerum quo incidunt.</p>
             </div>
-            <section class="projects">
+            <section id="projects-container">
 
-                <!--
-                <section class="project">
-                    <div class="project-title">
-                        <h3>CAMELEON CREATIVE</h3>
-                        <p class="undertitle">IBA Multimediedesigner</br>2. semester - 1. projekt</p>
-                    </div>
-                    <div class="project-content">
+                <!--Projekter indsættes her med JS-->
 
-                        <img class="main-img" src="img/cc-phone-and-pc-mockup.png" alt="">
-
-                        <div class="sec-content">
-                            <div class="sec-text">
-                                <h4>Et Multimediebureau</h4>
-                                <p>
-                                    Dette var et gruppeprojekt, hvor formålet var at lave en brandstrategi og en visuel kampagne for vores eget nystartede multimediebureau. I projektet har vi arbejdet iterativt med bl.a.:
-                                </p>
-                                <ul>
-                                    <li>Udarbejdelse af visuelle elementer for brandet, såsom logo, lavet i Adobe Illustrator</li>
-                                    <li>En high-fidelity visuel prototype af et responsivt website på figma</li>
-                                    <li>En designmanual for vores brand, lavet i Adobe InDesign</li>
-                                </ul>
-                            </div>
-                            <img class="sec-img" src="img/cc-visitkort.png" alt="">
-                            <div class="sec-text">
-                                <h4>Min rolle</h4>
-                                <p>
-                                    Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Hele brandet er baseret på kamæleonen, da den er et symbol på kreativitet. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.
-                                </p>
-                            </div>
-                            <img class="sec-img" src="img/cc-designguide-mockup.png" alt="">
-                        </div>
-
-                        <div class="icons">
-                            <img class="icon" src="img/illustrator.png" alt="Adobe illustrator ikon">
-                            <img class="icon" src="img/indesign.png" alt="Adobe InDesign ikon">
-                            <img class="icon" src="img/figma.png" alt="Figma ikon">
-                        </div>
-
-                    </div>
-                </section>
-
-                <section class="project">
-                    <div class="project-title">
-                        <h3>CAMELEON CREATIVE</h3>
-                        <p class="undertitle">IBA Multimediedesigner</br>2. semester - 1. projekt</p>
-                    </div>
-                    <div class="project-content">
-                        <div>
-                            <img class="main-img" src="img/datasikkerhed-laptop-and pc-mockup-v3.png" alt="">
-                        </div>
-                        <div class="sec-content">
-                            <div class="sec-text">
-                                <h4>Et Multimediebureau</h4>
-                                <p>
-                                    Dette var et gruppeprojekt, hvor formålet var at lave en brandstrategi og en visuel kampagne for vores eget nystartede multimediebureau. I projektet har vi arbejdet iterativt med bl.a.:
-                                </p>
-                                <ul>
-                                    <li>Udarbejdelse af visuelle elementer for brandet, såsom logo, lavet i Adobe Illustrator</li>
-                                    <li>En high-fidelity visuel prototype af et responsivt website på figma</li>
-                                    <li>En designmanual for vores brand, lavet i Adobe InDesign</li>
-                                </ul>
-                            </div>
-                            <img class="sec-img" src="img/datasikkerhed-branching.jpg" alt="">
-                            <div class="sec-text">
-                                <h4>Min rolle</h4>
-                                <p>
-                                    Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Hele brandet er baseret på kamæleonen, da den er et symbol på kreativitet. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.
-                                </p>
-                            </div>
-                            <img class="sec-img" src="img/datasikkerhed-phone-mockup.png" alt="">
-                        </div>
-
-                        <div class="icons">
-                            <img class="icon" src="img/illustrator.png" alt="Adobe illustrator ikon">
-                            <img class="icon" src="img/indesign.png" alt="Adobe InDesign ikon">
-                            <img class="icon" src="img/figma.png" alt="Figma ikon">
-                        </div>
-
-                    </div>
-                </section>
-                -->
             </section>
         </section>
 
-        <!--Hvem er jeg?-->
-        <section class="main-section" id="abt-me">
+        <!--Hvem er jeg?---------------------------------------------------------------------->
+        <section class="main-section" id="me-section">
             <div>
                 <h2>HVEM ER JEG?</h2>
                 <p class="cursive"></p>
