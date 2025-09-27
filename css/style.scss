@@ -114,6 +114,7 @@ header {
         padding: $sm-space;
         position: fixed;
         z-index: 100;
+        filter: drop-shadow(0 5px 100px rgba(256, 256, 256, 0.5));
 
 
         #logo {
@@ -276,7 +277,7 @@ footer {
     border: 2px solid $off-white;
 }
 
-// @media screen and (min-width: 800px) ------------------------------------------------------------------
+// @media screen and (min-width: 700px) ------------------------------------------------------------------
 
 @media screen and (min-width: 700px) {
     
@@ -294,7 +295,7 @@ footer {
             padding: $sm-space $m-space;
 
             #logo {
-                max-width: 3rem;
+                max-width: 4rem;
             }
 
             #burger {
@@ -378,13 +379,24 @@ footer {
     .cursive {
         font-size: 50px;
     }
+
+    #skills-section {
+        .skill-category {
+            p {
+                max-width: 60%;
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1700px) {
 
     header {
         nav {
-            padding: $m-space;
+            #logo {
+                max-width: 6rem;
+            }
 
             #nav-menu {
                 li {
@@ -462,7 +474,7 @@ footer {
         animation: img-fade forwards;
         animation-timeline: view();
         animation-range-start: 10%;
-        animation-range-end: 50%;
+        animation-range-end: 30%;
     }
     @keyframes img-fade {
         to {

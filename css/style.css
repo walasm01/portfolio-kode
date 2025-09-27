@@ -98,6 +98,7 @@ header nav {
   padding: 2rem;
   position: fixed;
   z-index: 100;
+  filter: drop-shadow(0 5px 100px rgba(255, 255, 255, 0.5));
 }
 header nav #logo {
   max-width: 3rem;
@@ -229,7 +230,7 @@ footer {
     padding: 2rem 4rem;
   }
   header nav #logo {
-    max-width: 3rem;
+    max-width: 4rem;
   }
   header nav #burger {
     display: none;
@@ -298,10 +299,14 @@ footer {
   .cursive {
     font-size: 50px;
   }
+  #skills-section .skill-category p {
+    max-width: 60%;
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 1700px) {
-  header nav {
-    padding: 4rem;
+  header nav #logo {
+    max-width: 6rem;
   }
   header nav #nav-menu li {
     font-size: 35px;
@@ -351,7 +356,7 @@ footer {
     animation: img-fade forwards;
     animation-timeline: view();
     animation-range-start: 10%;
-    animation-range-end: 50%;
+    animation-range-end: 30%;
   }
   @keyframes img-fade {
     to {
