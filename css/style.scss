@@ -266,7 +266,20 @@ header {
 
 // HVEM ER JEG? ---------------------------------------------------
 
+#abt-section {
+    #abt-title {
+        .cursive {
+            color: $light-green;
+        }
+    }
 
+    #abt-content {
+        img {
+            max-width: 15rem;
+        }
+    }
+
+}
 
 
 

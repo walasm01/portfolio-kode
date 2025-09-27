@@ -213,6 +213,13 @@ header #hero .cursive {
   max-width: 2rem;
 }
 
+#abt-section #abt-title .cursive {
+  color: #91FF72;
+}
+#abt-section #abt-content img {
+  max-width: 15rem;
+}
+
 footer {
   height: 400px;
   border: 2px solid #F8FCFF;
