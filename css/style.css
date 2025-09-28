@@ -40,6 +40,10 @@ body {
      object-fit: contain;
 }
 
+.hidden {
+  display: none;
+}
+
 h1, h2, h3 {
   font-family: "Climate Crisis", arial, sans-serif;
   font-weight: 100;
@@ -100,7 +104,7 @@ header nav {
   z-index: 100;
   filter: drop-shadow(0 5px 100px rgba(255, 255, 255, 0.5));
 }
-header nav #logo {
+header nav .logo {
   max-width: 3rem;
 }
 header nav #burger {
@@ -182,7 +186,7 @@ header #hero .cursive {
 }
 
 #projects-section #projects-intro {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 #projects-section .cursive {
   color: #FF8687;
@@ -190,6 +194,7 @@ header #hero .cursive {
 #projects-section #projects-container {
   display: grid;
   gap: 4rem;
+  margin-bottom: 4rem;
 }
 #projects-section #projects-container .project-content {
   display: grid;
@@ -214,22 +219,22 @@ header #hero .cursive {
 }
 
 #abt-section #abt-intro {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 #abt-section #abt-intro .cursive {
   color: #91FF72;
 }
-#abt-section #abt-content {
+#abt-section #abt-container {
   display: grid;
-  gap: 2rem;
+  gap: 4rem;
 }
-#abt-section #abt-content img {
+#abt-section #abt-container .abt-content img {
   max-width: 15rem;
+  margin-bottom: 2rem;
 }
 
-footer {
-  height: 400px;
-  border: 2px solid #F8FCFF;
+footer .logo {
+  max-width: 3rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -243,7 +248,7 @@ footer {
   header nav {
     padding: 2rem 4rem;
   }
-  header nav #logo {
+  header nav .logo {
     max-width: 4rem;
   }
   header nav #burger {
@@ -316,13 +321,7 @@ footer {
   .cursive {
     font-size: 50px;
   }
-  #skills-section .skill-category p {
-    max-width: 60%;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 1700px) {
-  header nav #logo {
+  header nav .logo {
     max-width: 6rem;
   }
   header nav #nav-menu li {
@@ -331,9 +330,18 @@ footer {
   header #hero {
     padding: 15rem 4rem;
   }
+  #skills-section .skill-category p {
+    max-width: 60%;
+    margin: 0 auto;
+  }
   #skills-section .skill-category .icons .icon {
     max-width: 4rem;
   }
+  #projects-section #projects-container .project-content .icons .icon-container .icon {
+    max-width: 3rem;
+  }
+}
+@media screen and (min-width: 1700px) {
   #projects-section #projects-intro {
     margin-bottom: 4rem;
   }
