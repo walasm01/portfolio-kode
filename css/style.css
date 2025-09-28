@@ -120,7 +120,7 @@ header nav #nav-menu {
   right: 0;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: #000222;
   padding-left: 2rem;
 }
 header nav #nav-menu.active {
@@ -233,7 +233,32 @@ header #hero .cursive {
   margin-bottom: 2rem;
 }
 
+footer {
+  border-top: 1px solid grey;
+  border-radius: 20px;
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+}
+footer #footer-title {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+footer #footer-title #footer-name p:first-of-type {
+  font-family: "Climate Crisis", arial, sans-serif;
+  font-size: 16px;
+}
+footer #footer-title #footer-name .cursive {
+  font-size: 16px;
+  color: #91FF72;
+}
 footer .logo {
+  max-width: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer #social-media img {
   max-width: 3rem;
 }
 
@@ -387,6 +412,16 @@ footer .logo {
     to {
       scale: 1;
       opacity: 1;
+    }
+  }
+  footer {
+    transform: translateY(80vh);
+    animation: footer-slide-up ease-in forwards;
+    animation-timeline: view();
+  }
+  @keyframes footer-slide-up {
+    to {
+      transform: translateY(0);
     }
   }
 }/*# sourceMappingURL=style.css.map */
