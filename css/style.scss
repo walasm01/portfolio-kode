@@ -278,7 +278,7 @@ header {
     #abt-content {
         display: grid;
         gap: $sm-space;
-        
+
         img {
             max-width: 15rem;
         }
@@ -371,6 +371,12 @@ footer {
                     }
                 }
             }
+        }
+    }
+
+    #abt-section {
+        #abt-intro {
+            margin-bottom: $m-space;
         }
     }
 }

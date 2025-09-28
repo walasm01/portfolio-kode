@@ -290,6 +290,9 @@ footer {
   #projects-section #projects-container .project-content .sec-content img:nth-of-type(2) {
     grid-area: 2/1/3/2;
   }
+  #abt-section #abt-intro {
+    margin-bottom: 4rem;
+  }
 }
 @media screen and (min-width: 1200px) {
   h1 {
