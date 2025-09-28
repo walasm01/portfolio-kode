@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #000222;
   color: #F8FCFF;
 }
 
@@ -93,7 +93,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: #000222;
   width: 100%;
   padding: 2rem;
   position: fixed;
@@ -213,8 +213,15 @@ header #hero .cursive {
   max-width: 2rem;
 }
 
-#abt-section #abt-title .cursive {
+#abt-section #abt-intro {
+  margin-bottom: 2rem;
+}
+#abt-section #abt-intro .cursive {
   color: #91FF72;
+}
+#abt-section #abt-content {
+  display: grid;
+  gap: 2rem;
 }
 #abt-section #abt-content img {
   max-width: 15rem;

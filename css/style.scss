@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: $off-black;
     color: $off-white;
 }
 
@@ -109,7 +109,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: black;
+        background-color: $off-black;
         width: 100%;
         padding: $sm-space;
         position: fixed;
@@ -267,13 +267,18 @@ header {
 // HVEM ER JEG? ---------------------------------------------------
 
 #abt-section {
-    #abt-title {
+    #abt-intro {
+        margin-bottom: $sm-space;
+
         .cursive {
             color: $light-green;
         }
     }
 
     #abt-content {
+        display: grid;
+        gap: $sm-space;
+        
         img {
             max-width: 15rem;
         }
