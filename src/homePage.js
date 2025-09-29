@@ -44,8 +44,8 @@ const datasikkerhed = new Project({
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const projectsSection = document.getElementById("projects-container");
-    Project.allProjects.forEach(project => projectsSection.insertAdjacentHTML("beforeend", project.display()));
+    const projectsContainer = document.getElementById("projects__container");
+    Project.allProjects.forEach(project => projectsContainer.insertAdjacentHTML("beforeend", project.display()));
 });
 
 const burger = document.getElementById("navbar__burger");

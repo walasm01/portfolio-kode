@@ -1,134 +1,100 @@
-#projects-section {
-
-    #projects-intro {
-        margin-bottom: $m-space;
-    }
+#projects__title {
+    margin-bottom: $m-space;
 
     .cursive {
         color: $light-red;
     }
-    
-    #projects-container {
+}
+
+#projects__container {
+    display: grid;
+    gap: $m-space;
+    margin-bottom: $m-space;
+}
+
+.project__main {
+    display: grid;
+    gap: $sm-space;
+
+    .project__content {
         display: grid;
-        gap: $m-space;
-        margin-bottom: $m-space;
+        gap: $sm-space;
+    }
 
-        .link-sticker {
-            display: flex;
-            justify-self: flex-end;
-            margin-top: $sm-space;
+    .icon {
+        max-width: 2rem;
+    }
+}
 
-            img {
-                max-width: 5rem;
-            }
-        }
+.project__img--main, .project__img--secondary {
+    width: 100%;
+    border-radius: 5px;
+}
+.project__img--secondary {
+    max-width: 30rem;
+}
+.project__img--secondary:nth-of-type(2) {
+    grid-area: 4/1/5/2;
+}
+.link__sticker {
+    display: flex;
+    justify-self: flex-end;
+    margin-top: $sm-space;
 
-        .project-content {
-            display: grid;
-            gap: $sm-space;
-
-            .main-img, .sec-img {
-                width: 100%;
-                border-radius: 5px;
-            }
-
-            .sec-img {
-                max-width: 30rem;
-            }
-
-            .sec-content {
-                display: grid;
-                gap: $sm-space;
-
-                img:nth-of-type(2) {
-                    grid-area: 4/1/5/2;
-                }
-            }
-
-            .icons {
-
-                .icon {
-                    max-width: 2rem;
-                }
-            }
-        }
+    img {
+        max-width: 5rem;
     }
 }
 
 @media screen and (min-width: 700px) {
-    #projects-section {
-        #projects-container {
-            .project-content {
-                gap: $pc-grid-gap;
+    .project__main {
+        gap: $pc-grid-gap;
 
-                .main-img, .sec-img {
-                        max-width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
+        .project__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: $pc-grid-gap;
 
-                .sec-content {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: $pc-grid-gap;
-
-                    .sec-text {
-                        align-self: center;
-                    }
-
-                    img:nth-of-type(2) {
-                        grid-area: 2/1/3/2;
-                    }
-                }
+            .project__text {
+                align-self: center;
             }
         }
+    }
+
+    .project__img--main, .project__img--secondary {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .project__img--secondary:nth-of-type(2) {
+        grid-area: 2/1/3/2;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    #projects-section {
-        #projects-container{
-            .project-content {
-                .icons {
-                    .icon-container {
-                        .icon {
-                            max-width: 3rem;
-                        }
-                    }
-                }
-            }
+    .project__main {
+        .icon {
+            max-width: 3rem;
         }
     }
 }
 
 @media screen and (min-width: 1700px) {
+    #projects__title {
+        margin-bottom: $m-space;
+    }
 
-    #projects-section {
-        #projects-intro {
-            margin-bottom: $m-space;
+    .project__main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $pc-grid-gap;
+
+        .project__img--secondary:nth-of-type(2) {
+            grid-area: 2/1/3/2;
         }
-        #projects-container {
-            .project-content {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: $pc-grid-gap;
 
-                .sec-content {
-                    img:nth-of-type(2) {
-                        grid-area: 2/1/3/2;
-                    }
-                }
-
-                .icons {
-                    grid-area: 2/1/3/3;
-
-                    .icon-container {
-                        .icon {
-                            max-width: 3rem;
-                        }
-                    }
-                }
-            }
+        .icons {
+            grid-area: 2/1/3/3;
         }
     }
 }

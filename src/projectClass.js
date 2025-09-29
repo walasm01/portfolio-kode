@@ -38,14 +38,14 @@ export default class Project {
     display() {
         return `
         <section class="project">
-            <div class="project-title">
+            <div class="project__title">
                 <h3><a href="${this.link}" target="_blank">${this.title}</a></h3>
                 <p class="undertitle">${this.undertitle}</p>
             </div>
-            <div class="project-content">
-                <img class="main-img" src="${this.mainImg}" alt="${this.mainAltText}">
-                <div class="sec-content">
-                    <div class="sec-text">
+            <div class="project__main">
+                <img class="project__img--main" src="${this.mainImg}" alt="${this.mainAltText}">
+                <div class="project__content">
+                    <div class="project__text">
                         <h4>${this.descriptionTitle}</h4>
                         <p>
                             ${this.description}
@@ -54,8 +54,8 @@ export default class Project {
                             ${this.descriptionList}
                         </ul>
                     </div>
-                    ${this.secImgs.map(img => `<img class="sec-img" src="${img}">`).join('')}
-                    <div class="sec-text">
+                    ${this.secImgs.map(img => `<img class="project__img--secondary" src="${img}">`).join('')}
+                    <div class="project__text">
                         <h4>${this.resultTitle}</h4>
                         <p>
                             ${this.result}
@@ -63,13 +63,13 @@ export default class Project {
                     </div>
                 </div>
                 <div class="icons">
-                    <p class="icons-text">Disse værktøjer har jeg brugt i projektet:</p>
-                    <div class="icon-container">
+                    <p class="icons__text">Disse værktøjer har jeg brugt i projektet:</p>
+                    <div class="icons__container">
                         ${this.icons.map(icon => `<img class="icon" src="${icon}" alt="">`).join('')}
                     </div>
                 </div>
             </div>
-            <a class="link-sticker" href="${this.link}" target="_blank"><img src="${this.stickerImg}"></a>
+            <a class="link__sticker" href="${this.link}" target="_blank"><img src="${this.stickerImg}"></a>
         </section>
         `;
     }
