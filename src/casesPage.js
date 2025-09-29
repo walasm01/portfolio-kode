@@ -8,18 +8,18 @@ const greyWolf = new Project({
     undertitle: "IBA Multimediedesigner</br>1. Semester, 1. Projekt",
     mainImg: "img/gw-double-phone-mockup.png",
     mainAltText: "Grey Wolf hjemmeside vist på to telefoner",
-    descriptionTitle: "Et Multimediebureau",
+    descriptionTitle: "Bæredygtig tøjvirksomhed",
     description: 
-        "Dette var et gruppeprojekt, hvor formålet var at lave en brandstrategi og en visuel kampagne for vores eget nystartede multimediebureau. I projektet har vi arbejdet iterativt med bl.a.:",
+        "Dette var et gruppeprojekt, hvor formålet var at lave en mobil webløsning for en fiktiv opstartsvirksomhed “Grey Wolf” med bæredygtighed i fokus. I projektet har vi arbejdet iterativt med bl.a.:",
     descriptionList: `
-        <li>Udarbejdelse af visuelle elementer for brandet, såsom logo, lavet i Adobe Illustrator</li>
-        <li>En high-fidelity visuel prototype af et responsivt website på figma</li>
-        <li>En designmanual for vores brand, lavet i Adobe InDesign</li>`,
+        <li>Målgrupperesearch vha. real-life interviews</li>
+        <li>Brainstorming og udvikling af Grey Wolf-brandet baseret på bæredygtighedstemaet</li>
+        <li>En high-fidelity visuel mobil prototype udarbejdet i figma</li>`,
     secImgs: ["img/gw-jacket-mockup.png", "img/gw-label-mockup.png"],
-    resultTitle: "Min rolle",
+    resultTitle: "Fra Roskildetelt til udendørstøj",
     result: 
-        "Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Hele brandet er baseret på kamæleonen, da den er et symbol på kreativitet. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.",
-    icons: ["img/figma-sticker-v2.png", "img/illustrator-sticker-v2.png", "img/indesign-sticker-v2.png", "img/photoshop-sticker.png", "img/aftereffect-sticker.png", "img/wordpress-sticker.png"],
+        "Grey Wolf har et tæt samarbejde med Roskilde Festival, hvor de indsamler de efterladte festivaltelte, og bruger materialet til at lave langtidsholdbart udendørstøj. Figma prototypen er bygget udfra de underliggende temaer som “udendørs” og “Roskilde Festival”. I gruppen havde vi et tæt samarbejde, men hvor vi hver især havde vores egne fokusområder. Jeg havde et stort ansvar i udviklingen af Grey Wolfs brandidentitet og deres visuelle udtryk på figma-prototypen.",
+    icons: ["img/figma-sticker-v2.png", "img/illustrator-sticker-v2.png"],
     stickerImg: "img/proaximon-sticker.png",
 });
 
@@ -147,8 +147,8 @@ const hkPlaybook = new Project({
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const projectsSection = document.getElementById("projects-container");
-    Project.allProjects.forEach(project => projectsSection.insertAdjacentHTML("beforeend", project.display()));
+    const projectsContainer = document.getElementById("projects__container");
+    Project.allProjects.forEach(project => projectsContainer.insertAdjacentHTML("beforeend", project.display()));
 });
 
 const burger = document.getElementById("burger");
