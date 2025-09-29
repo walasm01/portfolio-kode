@@ -138,6 +138,40 @@ header #hero .cursive {
   color: #91FF72;
 }
 
+@media screen and (min-width: 700px) {
+  header nav {
+    padding: 2rem 4rem;
+  }
+  header nav .logo {
+    max-width: 4rem;
+  }
+  header nav #burger {
+    display: none;
+  }
+  header nav #nav-menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    padding-left: 0;
+  }
+  header nav #nav-menu li {
+    font-size: 25px;
+  }
+  header #hero {
+    padding: 15rem 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header nav .logo {
+    max-width: 6rem;
+  }
+  header nav #nav-menu li {
+    font-size: 35px;
+  }
+}
 #intro-section {
   min-height: 100vh;
   display: flex;
@@ -278,30 +312,6 @@ footer #social-media img {
     margin-bottom: 12rem;
     padding: 0 4rem;
   }
-  header nav {
-    padding: 2rem 4rem;
-  }
-  header nav .logo {
-    max-width: 4rem;
-  }
-  header nav #burger {
-    display: none;
-  }
-  header nav #nav-menu {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    width: auto;
-    height: auto;
-    background: none;
-    padding-left: 0;
-  }
-  header nav #nav-menu li {
-    font-size: 20px;
-  }
-  header #hero {
-    padding: 15rem 4rem;
-  }
   #skills-section {
     gap: 8rem;
   }
@@ -361,15 +371,6 @@ footer #social-media img {
   }
   .cursive {
     font-size: 50px;
-  }
-  header nav .logo {
-    max-width: 6rem;
-  }
-  header nav #nav-menu li {
-    font-size: 35px;
-  }
-  header #hero {
-    padding: 15rem 4rem;
   }
   #skills-section .skill-category p {
     max-width: 60%;

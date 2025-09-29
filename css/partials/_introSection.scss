@@ -1,0 +1,33 @@
+#intro-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $sm-space;
+
+    p {
+        text-align: center;
+    }
+
+    #cards-container {
+        display: flex;
+        gap: $sm-space;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .card {
+            border-radius: 10px;
+            background-color: $off-white;
+            color: black;
+            padding: $m-space;
+            position: relative;
+
+            img {
+                max-width: 5rem;
+                position: absolute;
+                right: 10%;
+            }
+        }
+    }
+}

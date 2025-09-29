@@ -1,19 +1,5 @@
 // VARIABLER ---------------------------------------------------
-$dark-red: #320303;
-$dark-green: #092800;
-$dark-yellow: #2B2C05;
-$dark-blue: #002037;
-$light-red: #FF8687;
-$light-green: #91FF72;
-$light-yellow: #FCFD80;
-$light-blue: #8FCFFF;
-$off-white: #F8FCFF;
-$off-black: #000222;
-
-$sm-space: 2rem;
-$m-space: 4rem;
-$lg-space: 8rem;
-$pc-grid-gap: 3rem;
+@import 'partials/variables';
 
 
 // GENEREL STYLING ------------------------------------------
@@ -106,96 +92,9 @@ a:hover {
 
 // HEADER ----------------------------------------------
 
-header {
-    min-height: 100vh;
+@import 'partials/header';
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $off-black;
-        width: 100%;
-        padding: $sm-space;
-        position: fixed;
-        z-index: 100;
-        filter: drop-shadow(0 5px 100px rgba(256, 256, 256, 0.5));
-
-
-        .logo {
-            max-width: 3rem;
-        }
-
-        #burger {
-            color: $off-white;
-            font-size: 2rem;
-        }
-
-        #nav-menu {
-            display: none;
-            flex-direction: column;
-            gap: $sm-space;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: $off-black;
-            padding-left: $sm-space;
-
-            &.active {
-                display: flex;
-            }
-
-            li {
-                font-family: 'Climate Crisis', arial, sans-serif;
-                font-size: 35px;
-                list-style-type: none;
-            }
-        }
-    }
-
-    #hero {
-        padding: 12rem $sm-space;
-
-        .cursive {
-            color: $light-green;
-        }
-    }
-}
-
-#intro-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: $sm-space;
-
-    p{
-        text-align: center;
-    }
-
-    #cards-container {
-        display: flex;
-        gap: $sm-space;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        .card {
-            border-radius: 10px;
-            background-color: $off-white;
-            color: black;
-            padding: $m-space;
-            position: relative;
-
-            img {
-                max-width: 5rem;
-                position: absolute;
-                right: 10%;
-            }
-        }
-    }
-}
+@import 'partials/introSection';
 
 
 // HVAD KAN JEG? ------------------------------------------
@@ -357,38 +256,6 @@ footer {
         padding: 0 $m-space;
     }
 
-    header {
-        nav {
-            padding: $sm-space $m-space;
-
-            .logo {
-                max-width: 4rem;
-            }
-
-            #burger {
-                display: none;
-            }
-
-            #nav-menu {
-                display: flex;
-                flex-direction: row;
-                position: static;
-                width: auto;
-                height: auto;
-                background: none;
-                padding-left: 0;
-
-                li {
-                    font-size: 20px;
-                }
-            }
-        }
-
-        #hero {
-            padding: 15rem $m-space;
-        }
-    }
-
     #skills-section {
         gap: $lg-space;
     }
@@ -463,24 +330,6 @@ footer {
     }
     .cursive {
         font-size: 50px;
-    }
-
-    header {
-        nav {
-            .logo {
-                max-width: 6rem;
-            }
-
-            #nav-menu {
-                li {
-                    font-size: 35px;
-                }
-            }
-        }
-
-        #hero {
-            padding: 15rem $m-space;
-        }
     }
 
     #skills-section {
