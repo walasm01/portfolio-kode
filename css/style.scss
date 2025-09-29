@@ -237,6 +237,16 @@ header {
         gap: $m-space;
         margin-bottom: $m-space;
 
+        .link-sticker {
+            display: flex;
+            justify-self: flex-end;
+            margin-top: $sm-space;
+
+            img {
+                max-width: 5rem;
+            }
+        }
+
         .project-content {
             display: grid;
             gap: $sm-space;

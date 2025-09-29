@@ -196,6 +196,14 @@ header #hero .cursive {
   gap: 4rem;
   margin-bottom: 4rem;
 }
+#projects-section #projects-container .link-sticker {
+  display: flex;
+  justify-self: flex-end;
+  margin-top: 2rem;
+}
+#projects-section #projects-container .link-sticker img {
+  max-width: 5rem;
+}
 #projects-section #projects-container .project-content {
   display: grid;
   gap: 2rem;
