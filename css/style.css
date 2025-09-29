@@ -305,9 +305,6 @@ footer #social-media img {
   #skills-section {
     gap: 8rem;
   }
-  #projects-section #projects-container {
-    gap: 8rem;
-  }
   #projects-section #projects-container .project-content {
     gap: 3rem;
   }
