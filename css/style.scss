@@ -1,7 +1,6 @@
 // VARIABLER ---------------------------------------------------
 @import 'partials/variables';
 
-
 // GENEREL STYLING ------------------------------------------
 
 * {
@@ -24,32 +23,12 @@ body {
     height: 100vh;
 }
 
-.main-section {
+.main__section {
     margin-bottom: 8rem;
     padding: 0 $sm-space;
 }
 
-.icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
 
-    .icons__container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-
-        .icon {
-            object-fit: contain;
-        }
-    }
-}
-
-.hidden {
-    display: none;
-}
 
 // FONTS ----------------------------------------------------
 
@@ -91,39 +70,30 @@ a:hover {
 }
 
 // HEADER ----------------------------------------------
-
 @import 'partials/header';
 
+// CARDS -----------------------------------------------
 @import 'partials/cards';
 
-
 // HVAD KAN JEG? ------------------------------------------
-
 @import 'partials/skills';
+@import 'partials/icons';
 
 // PROJEKTER -----------------------------------------
-
 @import 'partials/projects';
 
 // HVEM ER JEG? ---------------------------------------------------
-
 @import 'partials/abt';
 
-
-
 // FOOTER -------------------------------------------------
-
 @import 'partials/footer';
 
-// @media screen and (min-width: 700px) ------------------------------------------------------------------
-
+// MEDIA QUERIES --------------------------------------------
 @media screen and (min-width: 700px) {
-    
     h1{
         font-size: 60px;
     }
-
-    .main-section {
+    .main__section {
         margin-bottom: 12rem;
         padding: 0 $m-space;
     }
@@ -154,7 +124,6 @@ a:hover {
 }
 
 // ANIMATIONER ------------------------------------------------------------------------------
-
 @media (prefers-reduced-motion: no-preference) {
     .skills__section {
         scale: 0.5;

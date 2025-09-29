@@ -1,0 +1,17 @@
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .icons__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .icon {
+            object-fit: contain;
+        }
+    }
+}

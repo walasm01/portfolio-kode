@@ -37,7 +37,7 @@
 
     <main>
         <!--cards---------------------------------------------------------------->
-        <section id="cards" class="main-section">
+        <section id="cards" class="main__section">
             <p class="undertitle">Klik for at læse mere om:</p>
             <div id="cards__container">
                 <a href="#skills-section" class="card">
@@ -56,7 +56,7 @@
         </section>
 
         <!--Hvad kan jeg?------------------------------------------------------------->
-        <section id="skills" class="main-section">
+        <section id="skills" class="main__section">
             <div id="skills__title">
                 <h2>HVAD KAN JEG?</h2>
                 <p class="cursive">Mit Skill-set</p>
@@ -86,7 +86,7 @@
         </section>
 
         <!--Projekter------------------------------------------------------------------>
-        <section id="projects" class="main-section">
+        <section id="projects" class="main__section">
             <div id="projects__title">
                 <h2>PROJEKTER</h2>
                 <p class="cursive">Skills i Praksis</p>
@@ -101,42 +101,42 @@
         </section>
 
         <!--Hvem er jeg?---------------------------------------------------------------------->
-        <section class="main-section" id="abt-section">
-            <div id="abt-intro">
+        <section id="abt" class="main__section">
+            <div id="abt__title">
                 <h2>HVEM ER JEG?</h2>
                 <p class="cursive">Min Rejse</p>
                 <p class="undertitle">Fra 6 år gammel scribbler til 2. Semester på Multimediedesign.</p>
             </div>
-            <div id="abt-container">
-                <section class="abt-content" id="abt-proaximon">
+            <div id="abt__container">
+                <section id="abt__proaximon" class="abt__content">
                     <h3>PROAXIMON</h3>
-                    <img src="img/viah-praktik.jpg" alt="billede af mig">
-                    <p class="abt-text">Min rejse til multimediedesigner startede allerede, da jeg var 6 år gammel. Jeg elskede at tegne monstrer og kreative kreaturer. I denne alder sendte jeg Proaximon ind til en GoGo Crazy Bones tegnekonkurrence, og jeg fik ham tilbage som en plastikfigur. Dette ser jeg som startpunktet på min rejse.</p>
+                    <img class="abt__img" src="img/viah-praktik.jpg" alt="billede af mig">
+                    <p class="abt__text">Min rejse til multimediedesigner startede allerede, da jeg var 6 år gammel. Jeg elskede at tegne monstrer og kreative kreaturer. I denne alder sendte jeg Proaximon ind til en GoGo Crazy Bones tegnekonkurrence, og jeg fik ham tilbage som en plastikfigur. Dette ser jeg som startpunktet på min rejse.</p>
                 </section>
-                <section class="abt-content" id="abt-viah">
+                <section id="abt__viah" class="abt__content">
                     <h3>PRAKTIK HOS VIAH</h3>
-                    <img src="img/placeholder-img.jpg" alt="billede af mig">
-                    <p class="abt-text">I 2017 da jeg gik i 8. klasse, skulle jeg finde et sted at være i praktik. Jeg vidste, at jeg ville i praktik hos en grafisk designer, så jeg søgte i alle hjørner af Lolland Falster for at finde et sted, der ville have en 8. klasses elev som praktikant i en uge. Efter mange afvisninger fik jeg tilbudt en plads hos en enkeltmands grafisk design virksomhed VIAH i Nørre Alslev. Her fik jeg lov til at designe min egne emballage til en morgenmadspakke af mit eget fiktive morgenmadsfirma.</p>
+                    <img class="abt__img" src="img/placeholder-img.jpg" alt="billede af mig">
+                    <p class="abt__text">I 2017 da jeg gik i 8. klasse, skulle jeg finde et sted at være i praktik. Jeg vidste, at jeg ville i praktik hos en grafisk designer, så jeg søgte i alle hjørner af Lolland Falster for at finde et sted, der ville have en 8. klasses elev som praktikant i en uge. Efter mange afvisninger fik jeg tilbudt en plads hos en enkeltmands grafisk design virksomhed VIAH i Nørre Alslev. Her fik jeg lov til at designe min egne emballage til en morgenmadspakke af mit eget fiktive morgenmadsfirma.</p>
                 </section>
-                <section class="abt-content" id="abt-multimedia">
+                <section id="abt__multimedia" class="abt__content">
                     <h3>MULTIMEDIEDESIGN PÅ IBA</h3>
-                    <img src="img/placeholder-img.jpg" alt="billede af mig">
-                    <p class="abt-text">I august 2024 flyttede jeg fra min hjemby Sakskøbing på Lolland til Kolding for at starte på multimediedesigner uddannelsen på IBA. Denne uddannelse valgte jeg på baggrund af min passion for at designe emballager og grafisk materiale. Udover at kunne udøve min passion på uddannelsen, har jeg fundet en ny interesse og glæde i at kode webløsninger. Jeg har valgt at specialisere mig indenfor webudvikling for at bygge ovenpå mine evner i design og indholdsproduktion.</p>
+                    <img class="abt__img" src="img/placeholder-img.jpg" alt="billede af mig">
+                    <p class="abt__text">I august 2024 flyttede jeg fra min hjemby Sakskøbing på Lolland til Kolding for at starte på multimediedesigner uddannelsen på IBA. Denne uddannelse valgte jeg på baggrund af min passion for at designe emballager og grafisk materiale. Udover at kunne udøve min passion på uddannelsen, har jeg fundet en ny interesse og glæde i at kode webløsninger. Jeg har valgt at specialisere mig indenfor webudvikling for at bygge ovenpå mine evner i design og indholdsproduktion.</p>
                 </section>
                 <a href="contact.html">Klik her</a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div id="footer-title">
-            <img class="logo" src="img/proaximon-sticker.png">
-            <div id="footer-name">
+    <footer id="footer">
+        <div id="footer__title">
+            <img id="footer__logo" src="img/proaximon-sticker.png">
+            <div id="footer__name">
                 <p>WALTER LIAO ASMUSSEN</p>
                 <p class="cursive">Multimediedesigner</p>
             </div>
         </div>
-        <section>
+        <section id="footer__nav">
             <p class="undertitle">NAVIGATION</p>
             <ul>
                 <li><a href="index.html">HJEM</a></li>
@@ -144,14 +144,14 @@
                 <li><a href="contact.html">KONTAKT</a></li>
             </ul>
         </section>
-        <section>
+        <section id="footer__contact">
             <p class="undertitle">KONTAKT</p>
             <ul>
                 <li>Mail: wasmussen0@gmail.com</li>
                 <li>Tlf.: +45 24 25 01 03</li>
             </ul>
         </section>
-        <section id="social-media">
+        <section id="footer__social">
             <p class="undertitle">SOCIALE MEDIER</p>
             <a href="" target="_blank"><img src="img/aftereffect-sticker.png" alt=""></a>
             <a href="" target="_blank"><img src="img/aftereffect-sticker.png" alt=""></a>
