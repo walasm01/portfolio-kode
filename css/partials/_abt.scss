@@ -1,0 +1,53 @@
+#abt-section {
+    #abt-intro {
+        margin-bottom: $m-space;
+
+        .cursive {
+            color: $light-green;
+        }
+    }
+
+    #abt-container {
+        display: grid;
+        gap: $m-space;
+
+        .abt-content {
+            img {
+                width: 100%;
+                margin-bottom: $sm-space;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #abt-section {
+        #abt-container {
+            .abt-content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: $sm-space;
+                
+                h3 {
+                    grid-area: 1/1/2/3;
+                }
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #abt-section {
+        #abt-container {
+            .abt-content {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+    }
+}

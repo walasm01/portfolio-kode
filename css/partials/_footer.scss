@@ -1,0 +1,36 @@
+footer {
+    border-top: 1px solid grey;
+    border-radius: 20px;
+    display: grid;
+    gap: $sm-space;
+    padding: $sm-space; 
+
+    #footer-title {
+        display: flex;
+        gap: $sm-space;
+        align-items: flex-start;
+
+        #footer-name {
+
+            p:first-of-type {
+                font-family: 'Climate Crisis', arial, sans-serif;
+                font-size: 16px;
+            }
+            .cursive {
+                font-size: 16px;
+                color: $light-green;
+            }
+        }
+    }
+
+    .logo {
+        max-width: 3rem;
+        object-fit: contain;
+    }
+
+    #social-media {
+        img {
+            max-width: 3rem;
+        }
+    }
+}

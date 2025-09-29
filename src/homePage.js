@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
     Project.allProjects.forEach(project => projectsSection.insertAdjacentHTML("beforeend", project.display()));
 });
 
-const burger = document.getElementById("burger");
-const navMenu = document.getElementById("nav-menu");
+const burger = document.getElementById("navbar__burger");
+const navMenu = document.getElementById("navbar__menu");
 
 burger.addEventListener("click", () => {
     navMenu.classList.toggle("active");

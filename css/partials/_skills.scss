@@ -1,0 +1,43 @@
+#skills-section {
+    display: grid;
+    gap: $m-space;
+
+    .cursive {
+        color: $light-blue;
+    }
+
+    .skill-category {
+        text-align: center;
+
+        .icons {
+            padding-top: $sm-space;
+
+            .icon {
+                max-width: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #skills-section {
+        gap: $lg-space;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #skills-section {
+        .skill-category {
+            p {
+                max-width: 60%;
+                margin: 0 auto;
+            }
+            .icons {
+
+                .icon {
+                    max-width: 4rem;
+                }
+            }
+        }
+    }
+}

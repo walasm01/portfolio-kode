@@ -1,105 +1,102 @@
-header {
+
+#header {
     min-height: 100vh;
+}
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $off-black;
+    width: 100%;
+    padding: $sm-space;
+    position: fixed;
+    z-index: 100;
+    filter: drop-shadow(0 5px 100px rgba(256, 256, 256, 0.5));
+
+    #navbar__logo {
+        max-width: 3rem;
+    }
+
+    #navbar__burger {
+        color: $off-white;
+        font-size: 2rem;
+    }
+
+    #navbar__menu {
+        display: none;
+        flex-direction: column;
+        gap: $sm-space;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
         background-color: $off-black;
-        width: 100%;
-        padding: $sm-space;
-        position: fixed;
-        z-index: 100;
-        filter: drop-shadow(0 5px 100px rgba(256, 256, 256, 0.5));
+        padding-left: $sm-space;
 
-
-        .logo {
-            max-width: 3rem;
+        li {
+            font-family: 'Climate Crisis', arial, sans-serif;
+            font-size: 35px;
+            list-style-type: none;
         }
 
-        #burger {
-            color: $off-white;
-            font-size: 2rem;
+        &.active {
+            display: flex;
+        }
+    }
+}
+
+#hero {
+    padding: 12rem $sm-space;
+
+    .cursive {
+        color: $light-green;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #navbar {
+        padding: $sm-space $m-space;
+
+        #navbar__logo {
+            max-width: 4rem;
         }
 
-        #nav-menu {
+        #navbar__burger {
             display: none;
-            flex-direction: column;
-            gap: $sm-space;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: $off-black;
-            padding-left: $sm-space;
+        }
 
-            &.active {
-                display: flex;
-            }
+        #navbar__menu {
+            display: flex;
+            flex-direction: row;
+            position: static;
+            width: auto;
+            height: auto;
+            background: none;
+            padding-left: 0;
 
             li {
-                font-family: 'Climate Crisis', arial, sans-serif;
-                font-size: 35px;
-                list-style-type: none;
+                font-size: 25px;
             }
         }
     }
 
     #hero {
-        padding: 12rem $sm-space;
-
-        .cursive {
-            color: $light-green;
-        }
+        padding: 15rem $m-space;
     }
 }
 
-@media screen and (min-width: 700px) {
-    header {
-        nav {
-            padding: $sm-space $m-space;
-
-            .logo {
-                max-width: 4rem;
-            }
-
-            #burger {
-                display: none;
-            }
-
-            #nav-menu {
-                display: flex;
-                flex-direction: row;
-                position: static;
-                width: auto;
-                height: auto;
-                background: none;
-                padding-left: 0;
-
-                li {
-                    font-size: 25px;
-                }
-            }
-        }
-
-        #hero {
-            padding: 15rem $m-space;
-        }
-    }
-}
 
 @media screen and (min-width: 1200px) {
-    header {
-        nav {
-            .logo {
-                max-width: 6rem;
-            }
+    #navbar {
+        #navbar__logo {
+            max-width: 6rem;
+        }
 
-            #nav-menu {
-                li {
-                    font-size: 35px;
-                }
+        #navbar__menu {
+            li {
+                font-size: 35px;
             }
         }
     }
