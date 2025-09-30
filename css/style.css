@@ -317,11 +317,35 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
+  .project__main .project__content {
+    grid-template-rows: 40vh 40vh;
+  }
   .project__main .project__img--secondary:nth-of-type(2) {
     grid-area: 2/1/3/2;
   }
   .project__main .icons {
     grid-area: 2/1/3/3;
+  }
+  #project__iba .project__main {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  #project__iba .project__main .project__img--secondary {
+    grid-area: 2/1/2/3;
+  }
+  #project__greywolf .project__main {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  #project__godset .project__main {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  #project__playbook .project__main {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  #project__playbook .project__main .project__img--secondary {
+    grid-area: 1/1/2/3;
+  }
+  #project__harald .project__main {
+    grid-template-columns: 1fr 1.5fr;
   }
 }
 #abt__title {

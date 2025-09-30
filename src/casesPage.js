@@ -29,20 +29,20 @@ const ibaVidensbank = new Project({
     title: "IBA VIDENSBANK",
     link: "",
     undertitle: "IBA Multimediedesigner</br>1. Semester, 2. Projekt",
-    mainImg: "img/iba-vidensbank-monitor-mockup.png",
+    mainImg: "img/iba-vidensbank-phone-mockup.png",
     mainAltText: "Iba's vidensbank vist på en skærm",
-    descriptionTitle: "Et Multimediebureau",
+    descriptionTitle: "En webtilgængelig vidensbank",
     description: 
-        "Dette var et gruppeprojekt, hvor formålet var at lave en brandstrategi og en visuel kampagne for vores eget nystartede multimediebureau. I projektet har vi arbejdet iterativt med bl.a.:",
+        "Dette var et individuelt projekt, hvor formålet var at kode en webtilgængelig og responsiv webplatform. Her ville IBA's ansatte nemt og hurtigt kunne tilgå informationer og guides til diverse programmer. I projektet har jeg arbejdet iterativt med bl.a.:",
     descriptionList: `
-        <li>Udarbejdelse af visuelle elementer for brandet, såsom logo, lavet i Adobe Illustrator</li>
-        <li>En high-fidelity visuel prototype af et responsivt website på figma</li>
-        <li>En designmanual for vores brand, lavet i Adobe InDesign</li>`,
-    secImgs: ["img/iba-vidensbank-phone-mockup.png", "img/gw-label-mockup.png"],
-    resultTitle: "Min rolle",
+        <li>Reasearch af målgruppens behov via. spørgeskema</li>
+        <li>Kodning i HTML og CSS med fokus på webtilgængelighed og responsivitet</li>
+        <li>Brugertest til fejlfinding og forbedring af hjemmesiden</li>`,
+    secImgs: ["img/iba-vidensbank-monitor-mockup.png"],
+    resultTitle: "Brugervenlighed og responsivitet",
     result: 
-        "Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Hele brandet er baseret på kamæleonen, da den er et symbol på kreativitet. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.",
-    icons: ["img/figma-sticker-v2.png", "img/illustrator-sticker-v2.png", "img/indesign-sticker-v2.png", "img/photoshop-sticker.png", "img/aftereffect-sticker.png", "img/wordpress-sticker.png"],
+        "Projektet endte i en fuldt funktionel hjemmeside opbygget med HTML og CSS, som jeg kalder for “IBA's Vidensbank”. Gennem testing og iterativ forbedring er den blevet brugervenlig, fuldt responsiv og mere eller mindre webtilgængelig. Havde jeg haft mere tid til opgaven, havde jeg lagt mere fokus på at forbedre webtilgængeligheden.",
+    icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png"],
     stickerImg: "img/proaximon-sticker.png",
 });
 
@@ -53,18 +53,17 @@ const godsetUng = new Project({
     undertitle: "IBA Multimediedesigner</br>1. Semester, 3. Projekt",
     mainImg: "img/godset-poster-mockup.png",
     mainAltText: "Iba's vidensbank vist på en skærm",
-    descriptionTitle: "Et Multimediebureau",
+    descriptionTitle: "En forlængelse af Godset",
     description: 
-        "Dette var et gruppeprojekt, hvor formålet var at lave en brandstrategi og en visuel kampagne for vores eget nystartede multimediebureau. I projektet har vi arbejdet iterativt med bl.a.:",
+        "Til dette gruppeprojekt havde vi en rigitg virksomhed ind over projektet. Vi skulle lave en hjemmeside til Godset i Kolding, og udvikle en idé til et alkoholfrit event, der kunne tiltrække unge 14-17 årige til at udvikle dem selv musikalsk gennem Godsets værdier. I projektet har vi arbejdet iterativt med bl.a.:",
     descriptionList: `
-        <li>Udarbejdelse af visuelle elementer for brandet, såsom logo, lavet i Adobe Illustrator</li>
-        <li>En high-fidelity visuel prototype af et responsivt website på figma</li>
-        <li>En designmanual for vores brand, lavet i Adobe InDesign</li>`,
+        <li>Udvikling af Godset Ung-konceptet som forlængelse af Godset</li>
+        <li>Responsiv kodning i HTML og CSS af en webplatform for Godset Ung</li>`,
     secImgs: ["img/godset-double-phone-mockup.png", "img/godset-plector-mockup.png"],
-    resultTitle: "Min rolle",
+    resultTitle: "Kaos Kaos Kaos",
     result: 
-        "Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Hele brandet er baseret på kamæleonen, da den er et symbol på kreativitet. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.",
-    icons: ["img/figma-sticker-v2.png", "img/illustrator-sticker-v2.png", "img/indesign-sticker-v2.png", "img/photoshop-sticker.png", "img/aftereffect-sticker.png", "img/wordpress-sticker.png"],
+        "Vi endte med at kode en prototype til en social platform, som vi kaldte for Godset Ung. På denne sociale platform samles Danmarks musikinteresserede unge, hvor de kan dele deres fælles interesser for musik. Derudover udviklede vi en idé til et alkoholfrit event på Godset, som vi kaldte for Kaos Band, hvor unge ville samles over en weekend for at koordinere en musikalsk performance.",
+    icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png"],
     stickerImg: "img/proaximon-sticker.png",
 });
 
@@ -83,7 +82,7 @@ const cameleonCreative = new Project({
         <li>En high-fidelity visuel prototype af et responsivt website på figma</li>
         <li>En designmanual for vores brand, lavet i Adobe InDesign</li>`,
     secImgs: ["img/cc-visitkort.png", "img/cc-designguide-mockup.png"],
-    resultTitle: "Min rolle",
+    resultTitle: "Den kreative kamæleon",
     result: 
         "Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Hele brandet er baseret på kamæleonen, da den er et symbol på kreativitet. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.",
     icons: ["img/figma-sticker-v2.png", "img/illustrator-sticker-v2.png", "img/indesign-sticker-v2.png", "img/photoshop-sticker.png", "img/aftereffect-sticker.png", "img/wordpress-sticker.png"],
@@ -118,16 +117,16 @@ const harald = new Project({
     undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
     mainImg: "img/datasikkerhed-laptop-and pc-mockup-v3.png",
     mainAltText: "Spillet om datasikkerhed på PC og mobil",
-    descriptionTitle: "Branching Scenarier",
+    descriptionTitle: "Harald",
     description: 
-        "Dette var et individuelt projekt, hvor formålet var at formidle information om datasikkerhed gennem branching-scenarier. Dette skulle gøres på en kreativ og informativ måde med HTML, CSS og JavaScript. Til dette har jeg arbejdet med bl.a.:",
+        "Dette var et gruppeprojekt, hvor vi skulle lave et produkt for en rigtig virksomhed. Opgaven var at lave en revision af tandlægekæden Harald Tandlægernes hjemmeside med fokus på at tiltrække flere tandlæger til deres klinikker. Til dette har vi arbejdet med bl.a.:",
     descriptionList: `
-        <li>Brainstorming og sketching af branching scenarier</li>
-        <li>Iterativ og responsiv kodning med HTML, CSS og JavaScript</li>`,
+        <li>Udarbejdelse af en hjemmeside prototype med WordPress med fokus på SEO</li>
+        <li>Udarbejdelse af forskellige kampagner til sociale medier med figma</li>`,
     secImgs: ["img/datasikkerhed-branching.jpg", "img/datasikkerhed-phone-mockup.png"],
-    resultTitle: "Et responsivt resultat",
+    resultTitle: "Harald",
     result: 
-        "Jeg endte med at lave et spil om datasikkerhed, hvor man ville blive præsenteret for forskellige “Smishing” (SMS phishing) scenarier med forskellige svarmuligheder. Ud fra hvad man svarede kunne man få 6 forskellige slutninger.",
+        "Som løsning til projektet endte vi med at lave en WordPress hjemmeside til Harald Tandlægerne, som beholdte de fleste designelementer af deres eksisterende hjemmeside, men hvor vi prøvede at give den et mere simpelt og moderne udtryk.Derudover fik vi lavet noget SoMe content for at tiltrække den yngre målgruppe af tandlægestuderende.",
     icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png", "img/js-sticker.png"],
     stickerImg: "img/proaximon-sticker.png",
 });
@@ -137,18 +136,18 @@ const hkPlaybook = new Project({
     title: "HK'S AI PLAYBOOK",
     link: "https://walterliaoasmussen.dk/datasikkerhed",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
-    mainImg: "img/datasikkerhed-laptop-and pc-mockup-v3.png",
+    mainImg: "img/playbook-monitor-mockup.png",
     mainAltText: "Spillet om datasikkerhed på PC og mobil",
-    descriptionTitle: "Branching Scenarier",
+    descriptionTitle: "Playbook",
     description: 
-        "Dette var et individuelt projekt, hvor formålet var at formidle information om datasikkerhed gennem branching-scenarier. Dette skulle gøres på en kreativ og informativ måde med HTML, CSS og JavaScript. Til dette har jeg arbejdet med bl.a.:",
+        "Dette var et gruppeprojekt, og her skulle vi lave et produkt til fagforeningen HK. Formålet var at lave en playbook med et sæt spilleregler for effektivt og ansvarligt brug af AI i deres arbejde med webinarer og præsentationer. Til dette har vi arbejdet med bl.a.:",
     descriptionList: `
-        <li>Brainstorming og sketching af branching scenarier</li>
-        <li>Iterativ og responsiv kodning med HTML, CSS og JavaScript</li>`,
-    secImgs: ["img/datasikkerhed-branching.jpg", "img/datasikkerhed-phone-mockup.png"],
-    resultTitle: "Et responsivt resultat",
+        <li>Brug af AI til at effektivisere vores egen arbejdsgang, med fokus på prompt-engineering</li>
+        <li>Udarbejdelse af en visuelt overskuelig playbook, der effektivt formidler information om AI. Lavet i Adobe InDesign</li>`,
+    secImgs: ["img/playbook-book-mockup.png"],
+    resultTitle: "Playbook",
     result: 
-        "Jeg endte med at lave et spil om datasikkerhed, hvor man ville blive præsenteret for forskellige “Smishing” (SMS phishing) scenarier med forskellige svarmuligheder. Ud fra hvad man svarede kunne man få 6 forskellige slutninger.",
+        "I dette projekt fik vi lavet en AI Playbook, der formidlede information om ansvarligt og effektivt brug af AI i HK’s arbejde med webinarer og kurser. Vi har i processen arbejdet ekstensivt med prompt-engineering for at få mest ud af vores AI brug som muligt. Jeg havde til ansvar at opsætte al den information, vi ville formidle i playbooken, på en letlæselig og overskuelig måde med Adobe InDesign.",
     icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png", "img/js-sticker.png"],
     stickerImg: "img/proaximon-sticker.png",
 });
