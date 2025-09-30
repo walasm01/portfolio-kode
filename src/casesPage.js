@@ -3,6 +3,7 @@
 import Project from "./projectClass.js";
 
 const greyWolf = new Project({
+    projectId: "project__greywolf",
     title: "GREY WOLF",
     link: "",
     undertitle: "IBA Multimediedesigner</br>1. Semester, 1. Projekt",
@@ -24,6 +25,7 @@ const greyWolf = new Project({
 });
 
 const ibaVidensbank = new Project({
+    projectId: "project__iba",
     title: "IBA VIDENSBANK",
     link: "",
     undertitle: "IBA Multimediedesigner</br>1. Semester, 2. Projekt",
@@ -45,10 +47,11 @@ const ibaVidensbank = new Project({
 });
 
 const godsetUng = new Project({
+    projectId: "project__godset",
     title: "GODSET UNG",
     link: "",
     undertitle: "IBA Multimediedesigner</br>1. Semester, 3. Projekt",
-    mainImg: "img/iba-vidensbank-monitor-mockup.png",
+    mainImg: "img/godset-poster-mockup.png",
     mainAltText: "Iba's vidensbank vist på en skærm",
     descriptionTitle: "Et Multimediebureau",
     description: 
@@ -57,7 +60,7 @@ const godsetUng = new Project({
         <li>Udarbejdelse af visuelle elementer for brandet, såsom logo, lavet i Adobe Illustrator</li>
         <li>En high-fidelity visuel prototype af et responsivt website på figma</li>
         <li>En designmanual for vores brand, lavet i Adobe InDesign</li>`,
-    secImgs: ["img/iba-vidensbank-phone-mockup.png", "img/gw-label-mockup.png"],
+    secImgs: ["img/godset-double-phone-mockup.png", "img/godset-plector-mockup.png"],
     resultTitle: "Min rolle",
     result: 
         "Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Hele brandet er baseret på kamæleonen, da den er et symbol på kreativitet. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.",
@@ -66,6 +69,7 @@ const godsetUng = new Project({
 });
 
 const cameleonCreative = new Project({
+    projectId: "project__cameleon",
     title: "CAMELEON CREATIVE",
     link: "https://www.figma.com/proto/sbqT4mJCSFvGOB05ujexYz/Branding-Projekt?page-id=724%3A1085&node-id=887-1573&p=f&viewport=479%2C820%2C0.05&t=aN9T4XDCHno2LTir-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=887%3A1573",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 1. Projekt",
@@ -87,6 +91,7 @@ const cameleonCreative = new Project({
 });
 
 const datasikkerhed = new Project({
+    projectId: "project__data",
     title: "SPILLET OM DATASIKKERHED",
     link: "https://walterliaoasmussen.dk/datasikkerhed",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
@@ -107,6 +112,7 @@ const datasikkerhed = new Project({
 });
 
 const harald = new Project({
+    projectId: "project__harald",
     title: "HARALD TANDLÆGERNE",
     link: "https://walterliaoasmussen.dk/datasikkerhed",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
@@ -127,6 +133,7 @@ const harald = new Project({
 });
 
 const hkPlaybook = new Project({
+    projectId: "project__playbook",
     title: "HK'S AI PLAYBOOK",
     link: "https://walterliaoasmussen.dk/datasikkerhed",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
@@ -151,10 +158,5 @@ document.addEventListener("DOMContentLoaded", () => {
     Project.allProjects.forEach(project => projectsContainer.insertAdjacentHTML("beforeend", project.display()));
 });
 
-const burger = document.getElementById("burger");
-const navMenu = document.getElementById("nav-menu");
-
-burger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-    document.body.classList.toggle("no-scroll");
-});
+import { burgerMenu } from "./burgerMenu.js";
+burgerMenu();

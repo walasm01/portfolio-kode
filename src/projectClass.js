@@ -4,6 +4,7 @@ export default class Project {
     static allProjects = [];
 
     constructor({
+        projectId,
         title, 
         link, 
         undertitle, 
@@ -18,6 +19,7 @@ export default class Project {
         icons,
         stickerImg,
     }) {
+        this.projectId = projectId;
         this.title = title;
         this.link = link;
         this.undertitle = undertitle;
@@ -37,7 +39,7 @@ export default class Project {
 
     display() {
         return `
-        <section class="project">
+        <section id="${this.projectId}" class="project">
             <div class="project__title">
                 <h3><a href="${this.link}" target="_blank">${this.title}</a></h3>
                 <p class="undertitle">${this.undertitle}</p>
@@ -72,5 +74,5 @@ export default class Project {
             <a class="link__sticker" href="${this.link}" target="_blank"><img src="${this.stickerImg}"></a>
         </section>
         `;
-    }
-}
+    };
+};

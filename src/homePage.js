@@ -3,6 +3,7 @@
 import Project from "./projectClass.js";
 
 const cameleonCreative = new Project({
+    projectId: "project__cameleon",
     title: "CAMELEON CREATIVE",
     link: "https://www.figma.com/proto/sbqT4mJCSFvGOB05ujexYz/Branding-Projekt?page-id=724%3A1085&node-id=887-1573&p=f&viewport=479%2C820%2C0.05&t=aN9T4XDCHno2LTir-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=887%3A1573",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 1. Projekt",
@@ -24,6 +25,7 @@ const cameleonCreative = new Project({
 });
 
 const datasikkerhed = new Project({
+    projectId: "project__data",
     title: "SPILLET OM DATASIKKERHED",
     link: "https://walterliaoasmussen.dk/datasikkerhed",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
@@ -48,10 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
     Project.allProjects.forEach(project => projectsContainer.insertAdjacentHTML("beforeend", project.display()));
 });
 
-const burger = document.getElementById("navbar__burger");
-const navMenu = document.getElementById("navbar__menu");
+import { burgerMenu } from "./burgerMenu.js";
+burgerMenu();
 
-burger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-    document.body.classList.toggle("no-scroll");
-});
+// const burger = document.getElementById("navbar__burger");
+// const navMenu = document.getElementById("navbar__menu");
+
+// burger.addEventListener("click", () => {
+//     navMenu.classList.toggle("active");
+//     document.body.classList.toggle("no-scroll");
+// });
