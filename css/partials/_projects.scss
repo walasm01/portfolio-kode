@@ -63,11 +63,37 @@
 
     .project__img--main, .project__img--secondary {
         max-width: 100%;
-        height: 100%;
         object-fit: cover;
+    }
+    .project__img--main {
+        height: 100vh;
+    }
+    .project__img--secondary {
+        height: 50vh;
     }
     .project__img--secondary:nth-of-type(2) {
         grid-area: 2/1/3/2;
+    }
+
+    #project__iba {
+        .project__img--secondary {
+            grid-area: 2/1/2/3;
+        }
+    }
+    #project__playbook {
+        .project__img--secondary {
+            grid-area: 2/1/2/3;
+        }
+    }
+    #project__cameleon {
+        .project__img--secondary:nth-of-type(1) {
+            grid-area: 1/1/2/2;
+        }
+    }
+    #project__data {
+        .project__img--secondary:nth-of-type(2) {
+            grid-area: 2/2/3/3;
+        }
     }
 }
 
@@ -79,22 +105,18 @@
     }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1400px) {
     #projects__title {
         margin-bottom: $m-space;
     }
 
     .project__main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.5fr;
         gap: $pc-grid-gap;
 
         .project__content {
             grid-template-rows: 40vh 40vh;
-        }
-
-        .project__img--secondary:nth-of-type(2) {
-            grid-area: 2/1/3/2;
         }
 
         .icons {
@@ -102,18 +124,21 @@
         }
     }
 
+    .project__img--main, .project__img--secondary {
+        height: 100%;
+    }
+
     #project__iba {
         .project__main {
-            grid-template-columns: 1fr 1.5fr;
-
-            .project__img--secondary {
-                grid-area: 2/1/2/3;
-            }
+            grid-template-columns: 1fr 3fr;
+        }
+        .project__img--secondary {
+            grid-area: 2/1/2/3;
         }
     }
     #project__greywolf {
         .project__main {
-            grid-template-columns: 1fr 1.5fr;
+            grid-template-columns: 1fr 2fr;
         }
     }
     #project__godset {
@@ -121,13 +146,31 @@
             grid-template-columns: 1fr 1.5fr;
         }
     }
-    #project__playbook {
+    #project__cameleon {
         .project__main {
             grid-template-columns: 1fr 1.5fr;
-
-            .project__img--secondary {
-                grid-area: 1/1/2/3;
-            }
+        }
+        .project__content {
+            grid-template-columns: 1fr 2fr;
+        }
+        .project__img--secondary:nth-of-type(1) {
+            grid-area: 1/1/2/2;
+        }
+    }
+    #project__data {
+        .project__img--secondary:nth-of-type(1) {
+            grid-area: 1/1/2/2;
+        }
+        .project__img--secondary:nth-of-type(2) {
+            grid-area: 2/2/3/3;
+        }
+    }
+    #project__playbook {
+        .project__main {
+            grid-template-columns: 1fr 2fr;
+        }
+        .project__img--secondary {
+            grid-area: 1/1/2/3;
         }
     }
     #project__harald {

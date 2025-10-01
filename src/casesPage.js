@@ -19,7 +19,7 @@ const greyWolf = new Project({
     secImgs: ["img/gw-jacket-mockup.png", "img/gw-label-mockup.png"],
     resultTitle: "Fra Roskildetelt til udendørstøj",
     result: 
-        "Grey Wolf har et tæt samarbejde med Roskilde Festival, hvor de indsamler de efterladte festivaltelte, og bruger materialet til at lave langtidsholdbart udendørstøj. Figma prototypen er bygget udfra de underliggende temaer som “udendørs” og “Roskilde Festival”. I gruppen havde vi et tæt samarbejde, men hvor vi hver især havde vores egne fokusområder. Jeg havde et stort ansvar i udviklingen af Grey Wolfs brandidentitet og deres visuelle udtryk på figma-prototypen.",
+        "Grey Wolf har et tæt samarbejde med Roskilde Festival, hvor de indsamler de efterladte festivaltelte, og bruger materialet til at lave langtidsholdbart udendørstøj. I gruppen havde vi et tæt samarbejde, men hvor vi hver især havde vores egne fokusområder. Jeg havde et stort ansvar i udviklingen af Grey Wolfs brandidentitet og deres visuelle udtryk på figma-prototypen.",
     icons: ["img/figma-sticker-v2.png", "img/illustrator-sticker-v2.png"],
     stickerImg: "img/greywolf-character-sticker.png",
 });
@@ -55,7 +55,7 @@ const godsetUng = new Project({
     mainAltText: "Iba's vidensbank vist på en skærm",
     descriptionTitle: "En forlængelse af Godset",
     description: 
-        "Til dette gruppeprojekt havde vi en rigitg virksomhed ind over projektet. Vi skulle lave en hjemmeside til Godset i Kolding, og udvikle en idé til et alkoholfrit event, der kunne tiltrække unge 14-17 årige til at udvikle dem selv musikalsk gennem Godsets værdier. I projektet har vi arbejdet iterativt med bl.a.:",
+        "Til dette gruppeprojekt havde vi en rigitg virksomhed ind over projektet. Vi skulle lave en hjemmeside til Godset i Kolding, og udvikle en idé til et alkoholfrit event til unge 14-17 årige. I projektet har vi arbejdet iterativt med bl.a.:",
     descriptionList: `
         <li>Udvikling af Godset Ung-konceptet som forlængelse af Godset</li>
         <li>Responsiv kodning i HTML og CSS af en webplatform for Godset Ung</li>`,
@@ -84,7 +84,7 @@ const cameleonCreative = new Project({
     secImgs: ["img/cc-visitkort.png", "img/cc-designguide-mockup.png"],
     resultTitle: "Den kreative kamæleon",
     result: 
-        "Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Hele brandet er baseret på kamæleonen, da den er et symbol på kreativitet. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.",
+        "Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.",
     icons: ["img/figma-sticker-v2.png", "img/illustrator-sticker-v2.png", "img/indesign-sticker-v2.png", "img/photoshop-sticker.png", "img/aftereffect-sticker.png", "img/wordpress-sticker.png"],
     stickerImg: "img/proaximon-sticker.png",
 });
@@ -140,14 +140,14 @@ const hkPlaybook = new Project({
     mainAltText: "Spillet om datasikkerhed på PC og mobil",
     descriptionTitle: "Playbook",
     description: 
-        "Dette var et gruppeprojekt, og her skulle vi lave et produkt til fagforeningen HK. Formålet var at lave en playbook med et sæt spilleregler for effektivt og ansvarligt brug af AI i deres arbejde med webinarer og præsentationer. Til dette har vi arbejdet med bl.a.:",
+        "Dette var et gruppeprojekt, og her skulle vi lave et produkt til fagforeningen HK. Formålet var at lave en playbook med et sæt spilleregler for effektivt og ansvarligt brug af AI i deres arbejde. Til dette har vi arbejdet med bl.a.:",
     descriptionList: `
-        <li>Brug af AI til at effektivisere vores egen arbejdsgang, med fokus på prompt-engineering</li>
-        <li>Udarbejdelse af en visuelt overskuelig playbook, der effektivt formidler information om AI. Lavet i Adobe InDesign</li>`,
+        <li>Prompt-engineering for effektivisering af vores samarbejde med AI</li>
+        <li>Udarbejdelse af en playbook, der effektivt formidler information om AI</li>`,
     secImgs: ["img/playbook-book-mockup.png"],
     resultTitle: "Playbook",
     result: 
-        "I dette projekt fik vi lavet en AI Playbook, der formidlede information om ansvarligt og effektivt brug af AI i HK’s arbejde med webinarer og kurser. Vi har i processen arbejdet ekstensivt med prompt-engineering for at få mest ud af vores AI brug som muligt. Jeg havde til ansvar at opsætte al den information, vi ville formidle i playbooken, på en letlæselig og overskuelig måde med Adobe InDesign.",
+        "I dette projekt fik vi lavet en AI Playbook, der formidlede information om ansvarligt og effektivt brug af AI i HK's arbejde med webinarer og kurser. Vi har i processen arbejdet ekstensivt med prompt-engineering for at få mest ud af vores AI brug som muligt. Jeg havde til ansvar at opsætte al den information, vi ville formidle i playbooken, på en letlæselig og overskuelig måde med Adobe InDesign.",
     icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png", "img/js-sticker.png"],
     stickerImg: "img/proaximon-sticker.png",
 });
