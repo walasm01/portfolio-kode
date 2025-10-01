@@ -217,6 +217,11 @@ a:hover {
     max-width: 4rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  #skills {
+    padding: 0 15rem;
+  }
+}
 .icons {
   display: flex;
   justify-content: center;
@@ -362,45 +367,40 @@ a:hover {
 
 .abt__img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 75vh;
   margin-bottom: 2rem;
+  border-radius: 5px;
+  border: 2px solid #F8FCFF;
+  filter: drop-shadow(5px 5px 20px rgba(255, 255, 255, 0.5));
 }
 
 @media screen and (min-width: 700px) {
   .abt__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-  .abt__content h3 {
-    grid-area: 1/1/2/3;
+    grid-template-columns: 1fr 2fr;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    max-width: 50rem;
   }
   .abt__img {
-    -o-object-fit: contain;
-       object-fit: contain;
     margin-bottom: 0;
+    max-height: 50vh;
   }
 }
 @media screen and (min-width: 1200px) {
+  #abt {
+    padding: 0 15rem;
+  }
   .abt__content {
-    grid-template-columns: 1fr 2fr;
+    max-width: 70rem;
   }
 }
 #footer {
-  border-top: 1px solid #808080;
-  border-radius: 20px;
   display: grid;
   gap: 2rem;
   padding: 2rem;
-}
-
-#footer__social img {
-  max-width: 3rem;
-}
-
-#footer__logo {
-  max-width: 3rem;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 #footer__title {
@@ -409,15 +409,77 @@ a:hover {
   align-items: flex-start;
 }
 
+#footer__logo {
+  max-width: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 #footer__name p:first-of-type {
   font-family: "Climate Crisis", arial, sans-serif;
   font-size: 16px;
 }
 #footer__name .cursive {
-  font-size: 16px;
   color: #91FF72;
+  font-size: 16px;
 }
 
+#social__icons img {
+  max-width: 3rem;
+}
+
+@media screen and (min-width: 700px) {
+  #footer {
+    padding: 4rem;
+    grid-template-columns: 1fr 1fr 1.5fr;
+  }
+  #footer__title {
+    grid-area: 1/1/2/4;
+  }
+  #footer__logo {
+    max-width: 5rem;
+  }
+  #footer__name p:first-of-type {
+    font-size: 30px;
+  }
+  #footer__name .cursive {
+    font-size: 30px;
+  }
+  #footer__social {
+    margin: 0 auto;
+  }
+  #social__icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #footer {
+    padding: 8rem 15rem;
+    gap: 4rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #footer {
+    padding: 8rem 15rem;
+  }
+  #footer__logo {
+    max-width: 7rem;
+  }
+  #footer__name p:first-of-type {
+    font-size: 40px;
+  }
+  #footer__name .cursive {
+    font-size: 40px;
+  }
+  #social__icons {
+    gap: 2rem;
+  }
+  #social__icons img {
+    max-width: 4rem;
+  }
+}
 @media screen and (min-width: 700px) {
   h1 {
     font-size: 60px;

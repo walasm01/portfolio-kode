@@ -13,29 +13,34 @@
 
 .abt__img {
     width: 100%;
+    object-fit: cover;
+    max-height: 75vh;
     margin-bottom: $sm-space;
+    border-radius: 5px;
+    border: 2px solid $off-white;
+    filter: drop-shadow(5px 5px 20px rgba(256, 256, 256, 0.5));
 }
 
 
 @media screen and (min-width: 700px) {
     .abt__content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: $sm-space;
-        
-        h3 {
-            grid-area: 1/1/2/3;
-        }
+        grid-template-columns: 1fr 2fr;
+        column-gap: $sm-space;
+        max-width: 50rem;
     }
 
     .abt__img {
-        object-fit: contain;
         margin-bottom: 0;
+        max-height: 50vh;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    #abt {
+        padding: 0 15rem;
+    }
     .abt__content {
-        grid-template-columns: 1fr 2fr;
+        max-width: 70rem;
     }
 }

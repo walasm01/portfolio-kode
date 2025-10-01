@@ -21,7 +21,7 @@ const greyWolf = new Project({
     result: 
         "Grey Wolf har et tæt samarbejde med Roskilde Festival, hvor de indsamler de efterladte festivaltelte, og bruger materialet til at lave langtidsholdbart udendørstøj. Figma prototypen er bygget udfra de underliggende temaer som “udendørs” og “Roskilde Festival”. I gruppen havde vi et tæt samarbejde, men hvor vi hver især havde vores egne fokusområder. Jeg havde et stort ansvar i udviklingen af Grey Wolfs brandidentitet og deres visuelle udtryk på figma-prototypen.",
     icons: ["img/figma-sticker-v2.png", "img/illustrator-sticker-v2.png"],
-    stickerImg: "img/proaximon-sticker.png",
+    stickerImg: "img/greywolf-character-sticker.png",
 });
 
 const ibaVidensbank = new Project({

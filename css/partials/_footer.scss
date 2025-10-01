@@ -1,20 +1,7 @@
 #footer {
-    border-top: 1px solid #808080;
-    border-radius: 20px;
     display: grid;
     gap: $sm-space;
     padding: $sm-space; 
-}
-
-#footer__social {
-    img {
-        max-width: 3rem;
-    }
-}
-
-#footer__logo {
-    max-width: 3rem;
-    object-fit: contain;
 }
 
 #footer__title {
@@ -23,13 +10,84 @@
     align-items: flex-start;
 }
 
+#footer__logo {
+    max-width: 3rem;
+    object-fit: contain;
+}
+
 #footer__name {
+
     p:first-of-type {
         font-family: 'Climate Crisis', arial, sans-serif;
         font-size: 16px;
     }
     .cursive {
-        font-size: 16px;
         color: $light-green;
+        font-size: 16px;
+    }
+}
+
+#social__icons {
+    img {
+        max-width: 3rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #footer {
+        padding: $m-space;
+        grid-template-columns: 1fr 1fr 1.5fr;
+    }
+    #footer__title {
+        grid-area: 1/1/2/4;
+    }
+    #footer__logo {
+        max-width: 5rem;
+    }
+    #footer__name {
+        p:first-of-type {
+            font-size: 30px;
+        }
+        .cursive {
+            font-size: 30px;
+        }
+    }
+    #footer__social {
+        margin: 0 auto;
+    }
+     #social__icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #footer {
+        padding: $lg-space 15rem;
+        gap: $m-space;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #footer {
+        padding: $lg-space 15rem;
+    }
+    #footer__logo {
+        max-width: 7rem;
+    }
+    #footer__name {
+        p:first-of-type {
+            font-size: 40px;
+        }
+        .cursive {
+            font-size: 40px;
+        }
+    }
+     #social__icons {
+        gap: 2rem;
+        img {
+            max-width: 4rem;
+        }
     }
 }
