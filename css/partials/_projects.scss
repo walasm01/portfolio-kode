@@ -1,9 +1,5 @@
 #projects__title {
     margin-bottom: $m-space;
-
-    .cursive {
-        color: $light-red;
-    }
 }
 
 #projects__container {
@@ -46,14 +42,14 @@
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $bp-sm) {
     .project__main {
-        gap: $pc-grid-gap;
+        gap: $sm-space;
 
         .project__content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: $pc-grid-gap;
+            gap: $sm-space;
 
             .project__text {
                 align-self: center;
@@ -97,7 +93,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $bp-m) {
     .project__main {
         .icon {
             max-width: 3rem;
@@ -105,7 +101,7 @@
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: $bp-lg) {
     #projects__title {
         margin-bottom: $m-space;
     }
@@ -113,7 +109,6 @@
     .project__main {
         display: grid;
         grid-template-columns: 1fr 1.5fr;
-        gap: $pc-grid-gap;
 
         .project__content {
             grid-template-rows: 40vh 40vh;
@@ -151,7 +146,7 @@
             grid-template-columns: 1fr 1.5fr;
         }
         .project__content {
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 1.25fr;
         }
         .project__img--secondary:nth-of-type(1) {
             grid-area: 1/1/2/2;
@@ -175,7 +170,7 @@
     }
     #project__harald {
         .project__main {
-            grid-template-columns: 1fr 1.5fr;
+            grid-template-columns: 1fr 2fr;
         }
     }
 }

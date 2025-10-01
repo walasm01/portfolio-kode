@@ -49,13 +49,9 @@
 
 #hero {
     padding: 12rem $sm-space;
-
-    .cursive {
-        color: $light-green;
-    }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $bp-sm) {
     #navbar {
         padding: $sm-space $m-space;
 
@@ -88,7 +84,7 @@
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $bp-m) {
     #navbar {
         #navbar__logo {
             max-width: 6rem;

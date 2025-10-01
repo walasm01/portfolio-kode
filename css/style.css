@@ -69,6 +69,18 @@ a:hover {
   letter-spacing: 0.15em;
 }
 
+.cursive__red {
+  color: #FF8687;
+}
+
+.cursive__green {
+  color: #91FF72;
+}
+
+.cursive__blue {
+  color: #8FCFFF;
+}
+
 #header {
   min-height: 100vh;
 }
@@ -115,11 +127,8 @@ a:hover {
 #hero {
   padding: 12rem 2rem;
 }
-#hero .cursive {
-  color: #91FF72;
-}
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   #navbar {
     padding: 2rem 4rem;
   }
@@ -145,7 +154,7 @@ a:hover {
     padding: 15rem 4rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   #navbar #navbar__logo {
     max-width: 6rem;
   }
@@ -189,30 +198,24 @@ a:hover {
   display: grid;
   gap: 4rem;
 }
-#skills .cursive {
-  color: #8FCFFF;
-}
 
 .skills__section {
   text-align: center;
-}
-.skills__section .icons {
-  padding-top: 2rem;
 }
 .skills__section .icon {
   max-width: 3rem;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   #skills {
     gap: 8rem;
   }
-}
-@media screen and (min-width: 1200px) {
   .skills__section p {
     max-width: 60%;
     margin: 0 auto;
   }
+}
+@media screen and (min-width: 1100px) {
   .skills__section .icon {
     max-width: 4rem;
   }
@@ -228,6 +231,7 @@ a:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-top: 2rem;
 }
 .icons .icons__container {
   display: flex;
@@ -241,9 +245,6 @@ a:hover {
 
 #projects__title {
   margin-bottom: 4rem;
-}
-#projects__title .cursive {
-  color: #FF8687;
 }
 
 #projects__container {
@@ -286,14 +287,14 @@ a:hover {
   max-width: 5rem;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .project__main {
-    gap: 3rem;
+    gap: 2rem;
   }
   .project__main .project__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 2rem;
   }
   .project__main .project__content .project__text {
     align-self: center;
@@ -325,7 +326,7 @@ a:hover {
     grid-area: 2/2/3/3;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .project__main .icon {
     max-width: 3rem;
   }
@@ -337,7 +338,6 @@ a:hover {
   .project__main {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap: 3rem;
   }
   .project__main .project__content {
     grid-template-rows: 40vh 40vh;
@@ -364,7 +364,7 @@ a:hover {
     grid-template-columns: 1fr 1.5fr;
   }
   #project__cameleon .project__content {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.25fr;
   }
   #project__cameleon .project__img--secondary:nth-of-type(1) {
     grid-area: 1/1/2/2;
@@ -382,14 +382,11 @@ a:hover {
     grid-area: 1/1/2/3;
   }
   #project__harald .project__main {
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 2fr;
   }
 }
 #abt__title {
   margin-bottom: 4rem;
-}
-#abt__title .cursive {
-  color: #91FF72;
 }
 
 #abt__container {
@@ -408,7 +405,7 @@ a:hover {
   filter: drop-shadow(5px 5px 20px rgba(255, 255, 255, 0.5));
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .abt__content {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -421,7 +418,7 @@ a:hover {
     max-height: 50vh;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   #abt {
     padding: 0 15rem;
   }
@@ -452,7 +449,6 @@ a:hover {
   font-size: 16px;
 }
 #footer__name .cursive {
-  color: #91FF72;
   font-size: 16px;
 }
 
@@ -460,7 +456,7 @@ a:hover {
   max-width: 3rem;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   #footer {
     padding: 4rem;
     grid-template-columns: 1fr 1fr 1.5fr;
@@ -486,7 +482,7 @@ a:hover {
     gap: 1rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   #footer {
     padding: 8rem 15rem;
     gap: 4rem;
@@ -512,7 +508,7 @@ a:hover {
     max-width: 4rem;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 60px;
   }
@@ -521,7 +517,7 @@ a:hover {
     padding: 0 4rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   h1 {
     font-size: 100px;
   }

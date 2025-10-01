@@ -68,6 +68,15 @@ a:hover {
     font-size: 30px;
     letter-spacing: 0.15em;
 }
+.cursive__red {
+    color: $light-red;
+}
+.cursive__green {
+    color: $light-green;
+}
+.cursive__blue {
+    color: $light-blue;
+}
 
 // HEADER ----------------------------------------------
 @import 'partials/header';
@@ -89,7 +98,7 @@ a:hover {
 @import 'partials/footer';
 
 // MEDIA QUERIES --------------------------------------------
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $bp-sm) {
     h1{
         font-size: 60px;
     }
@@ -99,7 +108,7 @@ a:hover {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $bp-m) {
     h1 {
         font-size: 100px;
     }

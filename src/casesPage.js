@@ -14,7 +14,7 @@ const greyWolf = new Project({
         "Dette var et gruppeprojekt, hvor formålet var at lave en mobil webløsning for en fiktiv opstartsvirksomhed “Grey Wolf” med bæredygtighed i fokus. I projektet har vi arbejdet iterativt med bl.a.:",
     descriptionList: `
         <li>Målgrupperesearch vha. real-life interviews</li>
-        <li>Brainstorming og udvikling af Grey Wolf-brandet baseret på bæredygtighedstemaet</li>
+        <li>Udvikling af Grey Wolf-brandet baseret på bæredygtighedstemaet</li>
         <li>En high-fidelity visuel mobil prototype udarbejdet i figma</li>`,
     secImgs: ["img/gw-jacket-mockup.png", "img/gw-label-mockup.png"],
     resultTitle: "Fra Roskildetelt til udendørstøj",
@@ -52,7 +52,7 @@ const godsetUng = new Project({
     link: "",
     undertitle: "IBA Multimediedesigner</br>1. Semester, 3. Projekt",
     mainImg: "img/godset-poster-mockup.png",
-    mainAltText: "Iba's vidensbank vist på en skærm",
+    mainAltText: "En plakat for Godset Ung",
     descriptionTitle: "En forlængelse af Godset",
     description: 
         "Til dette gruppeprojekt havde vi en rigitg virksomhed ind over projektet. Vi skulle lave en hjemmeside til Godset i Kolding, og udvikle en idé til et alkoholfrit event til unge 14-17 årige. I projektet har vi arbejdet iterativt med bl.a.:",
@@ -103,7 +103,7 @@ const datasikkerhed = new Project({
         <li>Brainstorming og sketching af branching scenarier</li>
         <li>Iterativ og responsiv kodning med HTML, CSS og JavaScript</li>`,
     secImgs: ["img/datasikkerhed-branching.jpg", "img/datasikkerhed-phone-mockup.png"],
-    resultTitle: "Et responsivt resultat",
+    resultTitle: "Ik fald for fup!",
     result: 
         "Jeg endte med at lave et spil om datasikkerhed, hvor man ville blive præsenteret for forskellige “Smishing” (SMS phishing) scenarier med forskellige svarmuligheder. Ud fra hvad man svarede kunne man få 6 forskellige slutninger.",
     icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png", "img/js-sticker.png"],
@@ -115,19 +115,19 @@ const harald = new Project({
     title: "HARALD TANDLÆGERNE",
     link: "https://walterliaoasmussen.dk/datasikkerhed",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
-    mainImg: "img/datasikkerhed-laptop-and pc-mockup-v3.png",
-    mainAltText: "Spillet om datasikkerhed på PC og mobil",
-    descriptionTitle: "Harald",
+    mainImg: "img/harald-instagram-mockup.png",
+    mainAltText: "Mockup af et Harald Tandlæger instagram oplæg",
+    descriptionTitle: "Flere tandlæger!",
     description: 
         "Dette var et gruppeprojekt, hvor vi skulle lave et produkt for en rigtig virksomhed. Opgaven var at lave en revision af tandlægekæden Harald Tandlægernes hjemmeside med fokus på at tiltrække flere tandlæger til deres klinikker. Til dette har vi arbejdet med bl.a.:",
     descriptionList: `
         <li>Udarbejdelse af en hjemmeside prototype med WordPress med fokus på SEO</li>
         <li>Udarbejdelse af forskellige kampagner til sociale medier med figma</li>`,
-    secImgs: ["img/datasikkerhed-branching.jpg", "img/datasikkerhed-phone-mockup.png"],
-    resultTitle: "Harald",
+    secImgs: ["img/harald-tote-bag.png", "img/harald-monitor-mockup2.png"],
+    resultTitle: "Haralds nye SEO Wordpress side",
     result: 
-        "Som løsning til projektet endte vi med at lave en WordPress hjemmeside til Harald Tandlægerne, som beholdte de fleste designelementer af deres eksisterende hjemmeside, men hvor vi prøvede at give den et mere simpelt og moderne udtryk.Derudover fik vi lavet noget SoMe content for at tiltrække den yngre målgruppe af tandlægestuderende.",
-    icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png", "img/js-sticker.png"],
+        "Som løsning til projektet endte vi med at lave en SEO WordPress hjemmeside til Harald Tandlægerne, som beholdte de fleste designelementer af deres eksisterende hjemmeside, men hvor vi prøvede at give den et mere simpelt og moderne udtryk. Derudover fik vi lavet noget SoMe content for at tiltrække den yngre målgruppe af tandlægestuderende.",
+    icons: ["img/figma-sticker-v2.png", "img/wordpress-sticker.png"],
     stickerImg: "img/proaximon-sticker.png",
 });
 
@@ -137,18 +137,18 @@ const hkPlaybook = new Project({
     link: "https://walterliaoasmussen.dk/datasikkerhed",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
     mainImg: "img/playbook-monitor-mockup.png",
-    mainAltText: "Spillet om datasikkerhed på PC og mobil",
-    descriptionTitle: "Playbook",
+    mainAltText: "Mockup af HK's AI playbook på en skærm",
+    descriptionTitle: "AI til fagforeningen HK",
     description: 
         "Dette var et gruppeprojekt, og her skulle vi lave et produkt til fagforeningen HK. Formålet var at lave en playbook med et sæt spilleregler for effektivt og ansvarligt brug af AI i deres arbejde. Til dette har vi arbejdet med bl.a.:",
     descriptionList: `
         <li>Prompt-engineering for effektivisering af vores samarbejde med AI</li>
         <li>Udarbejdelse af en playbook, der effektivt formidler information om AI</li>`,
     secImgs: ["img/playbook-book-mockup.png"],
-    resultTitle: "Playbook",
+    resultTitle: "I samarbejde med AI",
     result: 
         "I dette projekt fik vi lavet en AI Playbook, der formidlede information om ansvarligt og effektivt brug af AI i HK's arbejde med webinarer og kurser. Vi har i processen arbejdet ekstensivt med prompt-engineering for at få mest ud af vores AI brug som muligt. Jeg havde til ansvar at opsætte al den information, vi ville formidle i playbooken, på en letlæselig og overskuelig måde med Adobe InDesign.",
-    icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png", "img/js-sticker.png"],
+    icons: ["img/indesign-sticker.png"],
     stickerImg: "img/proaximon-sticker.png",
 });
 

@@ -1,42 +1,37 @@
 #skills {
     display: grid;
     gap: $m-space;
-
-    .cursive {
-        color: $light-blue;
-    }
 }
 
 .skills__section {
     text-align: center;
 
-    .icons {
-        padding-top: $sm-space;
-    }
     .icon {
         max-width: 3rem;
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $bp-sm) {
     #skills {
         gap: $lg-space;
     }
-}
-
-@media screen and (min-width: 1200px) {
     .skills__section {
         p {
             max-width: 60%;
             margin: 0 auto;
         }
+    }
+}
+
+@media screen and (min-width: $bp-m) {
+    .skills__section {
         .icon {
             max-width: 4rem;
         }
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: $bp-lg) {
     #skills {
         padding: 0 15rem;
     }
