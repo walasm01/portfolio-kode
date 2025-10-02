@@ -280,11 +280,11 @@ a:hover {
 
 .link__sticker {
   display: flex;
-  justify-self: flex-end;
+  justify-self: center;
   margin-top: 2rem;
 }
 .link__sticker img {
-  max-width: 5rem;
+  width: 18rem;
 }
 
 @media screen and (min-width: 768px) {

@@ -34,11 +34,11 @@
 }
 .link__sticker {
     display: flex;
-    justify-self: flex-end;
+    justify-self: center;
     margin-top: $sm-space;
 
     img {
-        max-width: 5rem;
+        width: 18rem;
     }
 }
 
