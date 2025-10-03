@@ -2,7 +2,7 @@
     margin-bottom: $m-space;
 }
 
-#projects__container {
+#projects__container--some, #projects__container--all {
     display: grid;
     gap: $m-space;
     margin-bottom: $m-space;
@@ -38,7 +38,7 @@
     margin-top: $sm-space;
 
     img {
-        width: 18rem;
+        width: 12rem;
     }
 }
 
@@ -121,6 +121,12 @@
 
     .project__img--main, .project__img--secondary {
         height: 100%;
+    }
+
+    .link__sticker {
+        img {
+            width: 16rem;
+        }
     }
 
     #project__iba {

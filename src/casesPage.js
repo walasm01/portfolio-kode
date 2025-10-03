@@ -64,10 +64,10 @@ const godsetUng = new Project({
     result: 
         "Vi endte med at kode en prototype til en social platform, som vi kaldte for Godset Ung. På denne sociale platform samles Danmarks musikinteresserede unge, hvor de kan dele deres fælles interesser for musik. Derudover udviklede vi en idé til et alkoholfrit event på Godset, som vi kaldte for Kaos Band, hvor unge ville samles over en weekend for at koordinere en musikalsk performance.",
     icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png"],
-    stickerImg: "img/proaximon-sticker.png",
+    stickerImg: "img/godset-sticker-text.png",
 });
 
-const cameleonCreative = new Project({
+export const cameleonCreative = new Project({
     projectId: "project__cameleon",
     title: "CAMELEON CREATIVE",
     link: "https://www.figma.com/proto/sbqT4mJCSFvGOB05ujexYz/Branding-Projekt?page-id=724%3A1085&node-id=887-1573&p=f&viewport=479%2C820%2C0.05&t=yCMFLZnLU3YHy1Sz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=887%3A1573",
@@ -89,7 +89,7 @@ const cameleonCreative = new Project({
     stickerImg: "img/cc-sticker-text.png",
 });
 
-const datasikkerhed = new Project({
+export const datasikkerhed = new Project({
     projectId: "project__data",
     title: "SPILLET OM DATASIKKERHED",
     link: "https://walterliaoasmussen.dk/datasikkerhed",
@@ -107,7 +107,7 @@ const datasikkerhed = new Project({
     result: 
         "Jeg endte med at lave et spil om datasikkerhed, hvor man ville blive præsenteret for forskellige “Smishing” (SMS phishing) scenarier med forskellige svarmuligheder. Ud fra hvad man svarede kunne man få 6 forskellige slutninger.",
     icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png", "img/js-sticker.png"],
-    stickerImg: "img/proaximon-sticker.png",
+    stickerImg: "img/datasikkerhed-sticker-text.png",
 });
 
 const harald = new Project({
@@ -128,7 +128,6 @@ const harald = new Project({
     result: 
         "Som løsning til projektet endte vi med at lave en SEO WordPress hjemmeside til Harald Tandlægerne, som beholdte de fleste designelementer af deres eksisterende hjemmeside, men hvor vi prøvede at give den et mere simpelt og moderne udtryk. Derudover fik vi lavet noget SoMe content for at tiltrække den yngre målgruppe af tandlægestuderende.",
     icons: ["img/figma-sticker-v2.png", "img/wordpress-sticker.png"],
-    stickerImg: "img/proaximon-sticker.png",
 });
 
 const hkPlaybook = new Project({
@@ -153,9 +152,8 @@ const hkPlaybook = new Project({
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const projectsContainer = document.getElementById("projects__container");
-    Project.allProjects.forEach(project => projectsContainer.insertAdjacentHTML("beforeend", project.display()));
+    const projectsContainerAll = document.getElementById("projects__container--all");
+    Project.allProjects.forEach(project => projectsContainerAll.insertAdjacentHTML("beforeend", project.display()));
 });
 
-import { burgerMenu } from "./burgerMenu.js";
-burgerMenu();
+import { burger } from "./burgerMenu.js";

@@ -247,7 +247,7 @@ a:hover {
   margin-bottom: 4rem;
 }
 
-#projects__container {
+#projects__container--some, #projects__container--all {
   display: grid;
   gap: 4rem;
   margin-bottom: 4rem;
@@ -284,7 +284,7 @@ a:hover {
   margin-top: 2rem;
 }
 .link__sticker img {
-  width: 18rem;
+  width: 12rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -347,6 +347,9 @@ a:hover {
   }
   .project__img--main, .project__img--secondary {
     height: 100%;
+  }
+  .link__sticker img {
+    width: 16rem;
   }
   #project__iba .project__main {
     grid-template-columns: 1fr 3fr;
