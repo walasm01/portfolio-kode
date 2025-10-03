@@ -8,37 +8,118 @@
     <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Climate+Crisis&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gasoek+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/78270d2f58.js" crossorigin="anonymous"></script>
-    <script type="module" src="src/mainPage.js" defer></script>
+    <script type="module" src="src/homePage.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
     <!--Navigation og Hero--------------------------------------------------------------------------------->
-    <header>
-        <nav>
-            <!--Logo-->
-            <img class="logo" src="img/proaximon-sticker.png" alt="logo">
-            <!--Burgermenu til mobil-->
-            <i class="fa-solid fa-bars-staggered" id="burger"></i>
-            <ul id="nav-menu">
+    <header id="header">
+        <nav id="navbar">
+            <img id="navbar__logo" src="img/proaximon-sticker.png" alt="logo">
+            <i id="navbar__burger" class="fa-solid fa-bars-staggered"></i>
+            <ul id="navbar__menu">
                 <li><a href="index.html">HJEM</a></li>
-                <li><a href="cases.html">CASES</a></li>
+                <li><a href="projects.html">PROJEKTER</a></li>
                 <li><a href="contact.html">KONTAKT</a></li>
             </ul>
         </nav>
-        <!--Hero-->
         <section id="hero">
-            <div id="hero-title">
+            <div id="hero__title">
                 <h1>
-                    KONTAKT
+                    KONTAKT MIG
                 </h1>
-                <p class="cursive">Multimediedesigner</p>
+                <p class="cursive cursive__blue">Skills i Praksis</p>
+                <p class="undertitle">Her får du et indblik i</p>
             </div>
-            <p class="undertitle">PORTFOLIO FOR WEB- OG GRAFISK DESIGN</p>
         </section>
     </header>
 
     <main>
-       
+        <section id="contact" class="main__section">
+            <section id="contact__intro" class="contact__section">
+                <img class="abt__img" src="img/placeholder-img.jpg" alt="">
+                <h2>MIT NAVN ER...</h2>
+                <p class="undertitle">Walter Liao Asmussen. Jeg bor i Kolding, og jeg går på multimediedesigner uddannelsen på IBA</p>
+            </section>
+            <section id="contact__like" class="contact__section">
+                <h2>JEG KAN GODT LIDE...</h2>
+                <p class="undertitle">Videospil, der fortæller en god historie</p>
+                <p class="undertitle">At tegne pokémon og klippe dem ud som kort</p>
+                <p class="undertitle">At designe visuelt æstetiske produktioner, som brandmateriale og hjemmesider</p>
+                <p class="undertitle">At fordybe mig i kode og sige "AHA!", når jeg finder fejlen</p>
+                <p class="undertitle">En hjemmelavet burger (nam nam nam)</p>
+            </section>
+            <section id="contact__info" class="contact__section">
+                <h2>DIN NYE KOLLEGA?</h2>
+                <p class="undertitle">Kontakt mig her:</p>
+                <p>mail</p>
+                <p>tlf</p>
+            </section>
+        </section>
+
+        <section id="abt" class="main__section">
+            <div id="abt__title">
+                <h2>MERE OM MIG</h2>
+                <p class="cursive cursive__blue">Min Rejse</p>
+                <p class="undertitle">Fra 6 år gammel scribbler til 2. Semester på Multimediedesign.</p>
+            </div>
+            <div id="abt__container">
+                <section id="abt__proaximon" class="abt__content">
+                    <img class="abt__img" src="img/placeholder-img.jpg" alt="billede af mig">
+                    <div class="abt__text">
+                        <h3>PROAXIMON</h3>
+                        <p>Min rejse til multimediedesigner startede allerede, da jeg var 6 år gammel. Jeg elskede at tegne monstrer og kreative kreaturer. I denne alder sendte jeg Proaximon ind til en GoGo Crazy Bones tegnekonkurrence, og jeg fik ham tilbage som en plastikfigur. Dette ser jeg som startpunktet på min rejse.</p>
+                    </div>
+                </section>
+                <section id="abt__viah" class="abt__content">
+                    <img class="abt__img" src="img/placeholder-img.jpg" alt="billede af mig">
+                    <div class="abt__text">
+                        <h3>PRAKTIK HOS VIAH</h3>
+                        <p>I 2017 da jeg gik i 8. klasse, skulle jeg finde et sted at være i praktik. Jeg vidste, at jeg ville i praktik hos en grafisk designer, så jeg søgte i alle hjørner af Lolland Falster for at finde et sted, der ville have en 8. klasses elev som praktikant i en uge. Efter mange afvisninger fik jeg tilbudt en plads hos en enkeltmands grafisk design virksomhed VIAH i Nørre Alslev. Her fik jeg lov til at designe min egne emballage til en morgenmadspakke af mit eget fiktive morgenmadsfirma.</p>
+                    </div>
+                </section>
+                <section id="abt__multimedia" class="abt__content">
+                    <img class="abt__img" src="img/placeholder-img.jpg" alt="billede af mig">
+                    <div class="abt__text">
+                        <h3>MULTIMEDIEDESIGN PÅ IBA</h3>
+                        <p>I august 2024 flyttede jeg fra min hjemby Sakskøbing på Lolland til Kolding for at starte på multimediedesigner uddannelsen på IBA. Denne uddannelse valgte jeg på baggrund af min passion for at designe emballager og grafisk materiale. Udover at kunne udøve min passion på uddannelsen, har jeg fundet en ny interesse og glæde i at kode webløsninger. Jeg har valgt at specialisere mig indenfor webudvikling for at bygge ovenpå mine evner i design og indholdsproduktion.</p>
+                    </div>
+                </section>
+            </div>
+        </section>
     </main>
+
+    <footer id="footer">
+        <div id="footer__title">
+            <img id="footer__logo" src="img/proaximon-sticker.png">
+            <div id="footer__name">
+                <p>WALTER LIAO ASMUSSEN</p>
+                <p class="cursive cursive__green">Multimediedesigner</p>
+            </div>
+        </div>
+        <section id="footer__nav">
+            <p class="undertitle">NAVIGATION</p>
+            <ul>
+                <li><a href="index.html">HJEM</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
+            </ul>
+        </section>
+        <section id="footer__contact">
+            <p class="undertitle">KONTAKT</p>
+            <ul>
+                <li>Mail: wasmussen0@gmail.com</li>
+                <li>Tlf.: +45 24 25 01 03</li>
+            </ul>
+        </section>
+        <section id="footer__social">
+            <p class="undertitle">SOCIALE MEDIER</p>
+            <div id="social__icons">
+                <a href="" target="_blank"><img src="img/aftereffect-sticker.png" alt=""></a>
+                <a href="" target="_blank"><img src="img/aftereffect-sticker.png" alt=""></a>
+                <a href="" target="_blank"><img src="img/aftereffect-sticker.png" alt=""></a>
+            </div>
+        </section>
+    </footer>
 
 </body>

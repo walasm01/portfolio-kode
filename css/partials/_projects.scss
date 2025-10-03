@@ -55,8 +55,14 @@
                 align-self: center;
             }
         }
-    }
 
+        .icons {
+            justify-content: flex-start;
+            grid-area: 1/1/2/2;
+            padding: 0;
+        }
+    }
+    
     .project__img--main, .project__img--secondary {
         max-width: 100%;
         object-fit: cover;
@@ -115,7 +121,7 @@
         }
 
         .icons {
-            grid-area: 2/1/3/3;
+            grid-area: 1/1/2/3;
         }
     }
 

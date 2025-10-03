@@ -27,7 +27,7 @@ const greyWolf = new Project({
 const ibaVidensbank = new Project({
     projectId: "project__iba",
     title: "IBA VIDENSBANK",
-    link: "",
+    link: "https://walterliaoasmussen.dk/iba-vidensbank/",
     undertitle: "IBA Multimediedesigner</br>1. Semester, 2. Projekt",
     mainImg: "img/iba-vidensbank-phone-mockup.png",
     mainAltText: "Iba's vidensbank vist på en skærm",
@@ -43,13 +43,13 @@ const ibaVidensbank = new Project({
     result: 
         "Projektet endte i en fuldt funktionel hjemmeside opbygget med HTML og CSS, som jeg kalder for “IBA's Vidensbank”. Gennem testing og iterativ forbedring er den blevet brugervenlig, fuldt responsiv og mere eller mindre webtilgængelig. Havde jeg haft mere tid til opgaven, havde jeg lagt mere fokus på at forbedre webtilgængeligheden.",
     icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png"],
-    stickerImg: "img/proaximon-sticker.png",
+    stickerImg: "img/iba-sticker-text.png",
 });
 
 const godsetUng = new Project({
     projectId: "project__godset",
     title: "GODSET UNG",
-    link: "",
+    link: "https://walterliaoasmussen.dk/godset-ung/",
     undertitle: "IBA Multimediedesigner</br>1. Semester, 3. Projekt",
     mainImg: "img/godset-poster-mockup.png",
     mainAltText: "En plakat for Godset Ung",
@@ -107,13 +107,13 @@ export const datasikkerhed = new Project({
     result: 
         "Jeg endte med at lave et spil om datasikkerhed, hvor man ville blive præsenteret for forskellige “Smishing” (SMS phishing) scenarier med forskellige svarmuligheder. Ud fra hvad man svarede kunne man få 6 forskellige slutninger.",
     icons: ["img/figma-sticker-v2.png", "img/html5-sticker-white.png", "img/css3-sticker.png", "img/js-sticker.png"],
-    stickerImg: "img/datasikkerhed-sticker-text.png",
+    stickerImg: "img/datasikkerhed-sticker-text2.png",
 });
 
 const harald = new Project({
     projectId: "project__harald",
     title: "HARALD TANDLÆGERNE",
-    link: "https://walterliaoasmussen.dk/datasikkerhed",
+    link: "https://walterliaoasmussen.dk",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
     mainImg: "img/harald-instagram-mockup.png",
     mainAltText: "Mockup af et Harald Tandlæger instagram oplæg",
@@ -128,6 +128,7 @@ const harald = new Project({
     result: 
         "Som løsning til projektet endte vi med at lave en SEO WordPress hjemmeside til Harald Tandlægerne, som beholdte de fleste designelementer af deres eksisterende hjemmeside, men hvor vi prøvede at give den et mere simpelt og moderne udtryk. Derudover fik vi lavet noget SoMe content for at tiltrække den yngre målgruppe af tandlægestuderende.",
     icons: ["img/figma-sticker-v2.png", "img/wordpress-sticker.png"],
+    stickerImg: "img/harald-sticker-text.png"
 });
 
 const hkPlaybook = new Project({
@@ -148,7 +149,7 @@ const hkPlaybook = new Project({
     result: 
         "I dette projekt fik vi lavet en AI Playbook, der formidlede information om ansvarligt og effektivt brug af AI i HK's arbejde med webinarer og kurser. Vi har i processen arbejdet ekstensivt med prompt-engineering for at få mest ud af vores AI brug som muligt. Jeg havde til ansvar at opsætte al den information, vi ville formidle i playbooken, på en letlæselig og overskuelig måde med Adobe InDesign.",
     icons: ["img/indesign-sticker.png"],
-    stickerImg: "img/proaximon-sticker.png",
+    stickerImg: "img/hk-sticker-text.png",
 });
 
 document.addEventListener("DOMContentLoaded", () => {

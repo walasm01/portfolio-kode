@@ -97,6 +97,8 @@ a:hover {
 // FOOTER -------------------------------------------------
 @import 'partials/footer';
 
+@import 'partials/contact';
+
 // MEDIA QUERIES --------------------------------------------
 @media screen and (min-width: $bp-sm) {
     h1{
@@ -109,6 +111,29 @@ a:hover {
 }
 
 @media screen and (min-width: $bp-m) {
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 25px;
+    }
+    p, li {
+        font-size: 20px;
+    }
+    .undertitle {
+        font-size: 25px;
+    }
+    .cursive {
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: $bp-lg) {
     h1 {
         font-size: 100px;
     }
@@ -149,18 +174,18 @@ a:hover {
         }
     }
 
-    .project__img--main, .project__img--secondary {
-        scale: 0.1;
-        opacity: 0;
-        animation: img-fade forwards;
-        animation-timeline: view();
-        animation-range-start: 10%;
-        animation-range-end: 40%;
-    }
-    @keyframes img-fade {
-        to {
-            scale: 1;
-            opacity: 1;
-        }
-    }
+    // .project__img--main, .project__img--secondary {
+    //     scale: 0.1;
+    //     opacity: 0;
+    //     animation: img-fade forwards;
+    //     animation-timeline: view();
+    //     animation-range-start: 10%;
+    //     animation-range-end: 40%;
+    // }
+    // @keyframes img-fade {
+    //     to {
+    //         scale: 1;
+    //         opacity: 1;
+    //     }
+    // }
 }
