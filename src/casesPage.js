@@ -2,7 +2,7 @@
 
 import Project from "./projectClass.js";
 
-const greyWolf = new Project({
+export const greyWolf = new Project({
     projectId: "project__greywolf",
     title: "GREY WOLF",
     link: "https://www.figma.com/proto/H00JvqqRyUImhthIwhwUkb/Grey-Wolf?page-id=29%3A140&node-id=161-265&p=f&viewport=-615%2C222%2C0.08&t=PBuzx0SsAxs2FT1n-1&scaling=scale-down&content-scaling=fixed",
@@ -24,7 +24,7 @@ const greyWolf = new Project({
     stickerImg: "img/gw-sticker-text2.png",
 });
 
-const ibaVidensbank = new Project({
+export const ibaVidensbank = new Project({
     projectId: "project__iba",
     title: "IBA VIDENSBANK",
     link: "https://walterliaoasmussen.dk/iba-vidensbank/",
@@ -46,7 +46,7 @@ const ibaVidensbank = new Project({
     stickerImg: "img/iba-sticker-text.png",
 });
 
-const godsetUng = new Project({
+export const godsetUng = new Project({
     projectId: "project__godset",
     title: "GODSET UNG",
     link: "https://walterliaoasmussen.dk/godset-ung/",
@@ -110,7 +110,7 @@ export const datasikkerhed = new Project({
     stickerImg: "img/datasikkerhed-sticker-text2.png",
 });
 
-const harald = new Project({
+export const harald = new Project({
     projectId: "project__harald",
     title: "HARALD TANDLÆGERNE",
     link: "https://walterliaoasmussen.dk",
@@ -131,7 +131,7 @@ const harald = new Project({
     stickerImg: "img/harald-sticker-text.png"
 });
 
-const hkPlaybook = new Project({
+export const hkPlaybook = new Project({
     projectId: "project__playbook",
     title: "HK'S AI PLAYBOOK",
     link: "https://walterliaoasmussen.dk/datasikkerhed",

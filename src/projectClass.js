@@ -45,6 +45,12 @@ export default class Project {
                 <p class="undertitle">${this.undertitle}</p>
             </div>
             <div class="project__main">
+                <div class="icons">
+                    <p class="icons__text">Disse værktøjer har jeg brugt i projektet:</p>
+                    <div class="icons__container">
+                        ${this.icons.map(icon => `<img class="icon" src="${icon}" alt="">`).join('')}
+                    </div>
+                </div>
                 <img class="project__img--main" src="${this.mainImg}" alt="${this.mainAltText}">
                 <div class="project__content">
                     <div class="project__text">
@@ -62,12 +68,6 @@ export default class Project {
                         <p>
                             ${this.result}
                         </p>
-                    </div>
-                </div>
-                <div class="icons">
-                    <p class="icons__text">Disse værktøjer har jeg brugt i projektet:</p>
-                    <div class="icons__container">
-                        ${this.icons.map(icon => `<img class="icon" src="${icon}" alt="">`).join('')}
                     </div>
                 </div>
             </div>

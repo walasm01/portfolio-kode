@@ -28,6 +28,26 @@ body {
     padding: 0 $sm-space;
 }
 
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+    border: 2px solid $off-white;
+    border-radius: 15px;
+    width: 15rem;
+    transition: 100ms ease-in-out;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        color: $off-black;
+        background-color: $off-white;
+    }
+}
 
 
 // FONTS ----------------------------------------------------
@@ -59,9 +79,10 @@ p, li {
 a {
     color: $off-white;
     text-decoration: none;
-}
-a:hover {
-    color: $light-blue;
+
+    &:hover {
+        color: $light-blue;
+    }
 }
 .cursive {
     font-family: 'Aguafina Script', arial, sans-serif;
@@ -154,6 +175,10 @@ a:hover {
     }
     .cursive {
         font-size: 50px;
+    }
+
+    .cta {
+        width: 20rem;
     }
 }
 

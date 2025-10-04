@@ -17,6 +17,11 @@
         gap: $sm-space;
     }
 
+    .icons {
+        justify-content: flex-start;
+        padding: 0;
+    }
+
     .icon {
         max-width: 2rem;
     }
@@ -36,9 +41,14 @@
     display: flex;
     justify-self: center;
     margin-top: $sm-space;
+    transition: 100ms ease-in-out;
 
     img {
         width: 12rem;
+    }
+
+    &:hover {
+        scale: 1.15;
     }
 }
 
@@ -54,12 +64,6 @@
             .project__text {
                 align-self: center;
             }
-        }
-
-        .icons {
-            justify-content: flex-start;
-            grid-area: 1/1/2/2;
-            padding: 0;
         }
     }
     

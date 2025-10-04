@@ -16,18 +16,9 @@
     gap: $sm-space;
     justify-content: center;
     flex-wrap: wrap;
-}
 
-.card {
-    border-radius: 10px;
-    background-color: $off-white;
-    color: black;
-    padding: $m-space;
-    position: relative;
-
-    img {
-        max-width: 5rem;
-        position: absolute;
-        right: 10%;
+    .cta {
+        padding: $m-space $sm-space;
     }
+
 }
