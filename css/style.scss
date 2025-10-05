@@ -24,7 +24,7 @@ body {
 }
 
 .main__section {
-    margin-bottom: 8rem;
+    margin-bottom: 50vh;
     padding: 0 $sm-space;
 }
 
@@ -76,6 +76,9 @@ p, li {
     font-family: 'DM Sans', arial, sans-serif;
     font-weight: 200;
 }
+.undertitle {
+    font-style: italic;
+}
 a {
     color: $off-white;
     text-decoration: none;
@@ -104,6 +107,8 @@ a {
 
 // CARDS -----------------------------------------------
 @import 'partials/cards';
+
+@import 'partials/why';
 
 // HVAD KAN JEG? ------------------------------------------
 @import 'partials/skills';
