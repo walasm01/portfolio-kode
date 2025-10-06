@@ -16,9 +16,8 @@
     }
 
     p, li {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
-
 }
 
 #contact__intro {
@@ -31,8 +30,21 @@
     text-align: center;
 
     p {
-        font-size: 2rem;
+        font-size: 1rem;
         margin-bottom: 1em;
         color: abs.$off-white;
+    }
+}
+
+@media screen and (min-width: abs.$bp-sm) {
+    .contact__section {
+        p, li {
+            font-size: 1.25rem;
+        }
+    }
+    #contact__container {
+        p {
+            font-size: 2rem;
+        }
     }
 }

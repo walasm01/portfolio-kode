@@ -20,8 +20,14 @@
     }
 
     #navbar__burger {
-        color: abs.$off-white;
-        font-size: 2rem;
+        background: none;
+        border: none;
+        padding: 0;
+
+        i {
+            color: abs.$off-white;
+            font-size: 2rem;
+        }
     }
 
     #navbar__menu {
@@ -50,10 +56,6 @@
 
 #hero {
     padding: 12rem abs.$sm-space;
-
-    .cursive {
-        font-size: 2.5rem;
-    }
 }
 
 @media screen and (min-width: abs.$bp-sm) {
@@ -85,6 +87,10 @@
 
     #hero {
         padding: 15rem abs.$m-space;
+
+        .cursive {
+            font-size: 2.5rem;
+        }
     }
 }
 

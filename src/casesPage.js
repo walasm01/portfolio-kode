@@ -156,7 +156,9 @@ export const hkPlaybook = new Project({
 
 document.addEventListener("DOMContentLoaded", () => {
     const projectsContainerAll = document.getElementById("projects__container--all");
-    Project.allProjects.forEach(project => projectsContainerAll.insertAdjacentHTML("beforeend", project.display()));
+    if (projectsContainerAll) {
+        Project.allProjects.forEach(project => projectsContainerAll.insertAdjacentHTML("beforeend", project.display()));
+    };
 });
 
-import { burger } from "./uiComponents/burgerMenu.js";
+import { burgerControls } from "./uiComponents/burgerMenu.js";

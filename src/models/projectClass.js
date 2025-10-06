@@ -62,7 +62,7 @@ export default class Project {
                             ${this.descriptionList}
                         </ul>
                     </div>
-                    ${this.secImgs.map(img => `<img class="project__img--secondary" src="${img}">`).join('')}
+                    ${this.secImgs.map(img => `<img class="project__img--secondary" src="${img}" alt="">`).join('')}
                     <div class="project__text">
                         <h4>${this.resultTitle}</h4>
                         <p>
@@ -71,7 +71,7 @@ export default class Project {
                     </div>
                 </div>
             </div>
-            <a class="link__sticker" href="${this.link}" target="_blank"><img src="${this.stickerImg}"></a>
+            <a class="link__sticker" href="${this.link}" target="_blank"><img src="${this.stickerImg}" alt=""></a>
         </section>
         `;
     };

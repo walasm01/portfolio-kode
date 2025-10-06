@@ -9,4 +9,4 @@ document.addEventListener("DOMContentLoaded", () => {
     projectsContainerSome.insertAdjacentHTML("beforeend", ibaVidensbank.display());
 });
 
-import { burger } from "./uiComponents/burgerMenu.js";
+import { burgerControls } from "./uiComponents/burgerMenu.js";
