@@ -23,58 +23,10 @@ body {
   padding: 0 2rem;
 }
 
-.cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
-  padding: 1rem;
-  border: 2px solid hsl(0, 0%, 90%);
-  border-radius: 15px;
-  width: 15rem;
-  transition: 100ms ease-in-out;
-}
-.cta p {
-  margin-bottom: 0;
-}
-.cta:hover {
-  color: #000222;
-  background-color: hsl(0, 0%, 90%);
-}
-
-h1, h2, h3 {
-  font-family: "Climate Crisis", arial, sans-serif;
-  font-weight: 100;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-          hyphens: auto;
-}
-
-h3, h4, .undertitle {
-  font-size: 20px;
-  margin-bottom: 0.5em;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 35px;
-}
-
-h4 {
-  font-family: "DM Sans", arial, sans-serif;
-  font-weight: 600;
-}
-
 p, li {
   font-family: "DM Sans", arial, sans-serif;
-  font-weight: 200;
-}
-
-.undertitle {
-  font-style: italic;
+  color: hsl(0, 0%, 70%);
+  font-size: 1rem;
 }
 
 a {
@@ -82,12 +34,19 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #8FCFFF;
+  color: #91FF72;
+}
+
+.undertitle {
+  color: hsl(0, 0%, 90%);
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 0.5em;
 }
 
 .cursive {
   font-family: "Aguafina Script", arial, sans-serif;
-  font-size: 30px;
+  font-size: 1.75rem;
   letter-spacing: 0.15em;
 }
 
@@ -101,6 +60,74 @@ a:hover {
 
 .cursive__blue {
   color: #8FCFFF;
+}
+
+h4 {
+  font-family: "DM Sans", arial, sans-serif;
+  font-weight: 600;
+}
+
+h3, h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h1, h2, h3 {
+  font-family: "Climate Crisis", arial, sans-serif;
+  font-weight: 100;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  padding: 1rem;
+  border: 2px solid hsl(0, 0%, 90%);
+  border-radius: 15px;
+  width: 15rem;
+  transition: 100ms ease-in-out;
+}
+.cta p {
+  margin-bottom: 0;
+  color: hsl(0, 0%, 90%);
+  font-size: 1.25rem;
+  font-style: italic;
+}
+.cta:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+.cta:hover p {
+  color: #000222;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+.icons .icons__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.icons .icons__container .icon {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #header {
@@ -184,6 +211,88 @@ a:hover {
     font-size: 35px;
   }
 }
+#footer {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#footer__title {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+#footer__logo {
+  max-width: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#footer__name p:first-of-type {
+  font-family: "Climate Crisis", arial, sans-serif;
+  font-size: 16px;
+}
+#footer__name .cursive {
+  font-size: 16px;
+}
+
+#social__icons img {
+  max-width: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  #footer {
+    padding: 4rem;
+    grid-template-columns: 1fr 1fr 1.5fr;
+  }
+  #footer__title {
+    grid-area: 1/1/2/4;
+  }
+  #footer__logo {
+    max-width: 5rem;
+  }
+  #footer__name p:first-of-type {
+    font-size: 30px;
+  }
+  #footer__name .cursive {
+    font-size: 30px;
+  }
+  #footer__social {
+    margin: 0 auto;
+  }
+  #social__icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #footer {
+    padding: 8rem 10rem;
+    gap: 4rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #footer {
+    padding: 8rem 15rem;
+  }
+  #footer__logo {
+    max-width: 7rem;
+  }
+  #footer__name p:first-of-type {
+    font-size: 40px;
+  }
+  #footer__name .cursive {
+    font-size: 40px;
+  }
+  #social__icons {
+    gap: 2rem;
+  }
+  #social__icons img {
+    max-width: 4rem;
+  }
+}
 #why {
   min-height: 100vh;
   display: flex;
@@ -221,24 +330,6 @@ a:hover {
     max-width: 4rem;
   }
 }
-.icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding-top: 2rem;
-}
-.icons .icons__container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.icons .icons__container .icon {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 #projects__title {
   margin-bottom: 4rem;
 }
@@ -435,88 +526,6 @@ a:hover {
     max-width: 70rem;
   }
 }
-#footer {
-  display: grid;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-#footer__title {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-}
-
-#footer__logo {
-  max-width: 3rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-#footer__name p:first-of-type {
-  font-family: "Climate Crisis", arial, sans-serif;
-  font-size: 16px;
-}
-#footer__name .cursive {
-  font-size: 16px;
-}
-
-#social__icons img {
-  max-width: 3rem;
-}
-
-@media screen and (min-width: 768px) {
-  #footer {
-    padding: 4rem;
-    grid-template-columns: 1fr 1fr 1.5fr;
-  }
-  #footer__title {
-    grid-area: 1/1/2/4;
-  }
-  #footer__logo {
-    max-width: 5rem;
-  }
-  #footer__name p:first-of-type {
-    font-size: 30px;
-  }
-  #footer__name .cursive {
-    font-size: 30px;
-  }
-  #footer__social {
-    margin: 0 auto;
-  }
-  #social__icons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #footer {
-    padding: 8rem 10rem;
-    gap: 4rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  #footer {
-    padding: 8rem 15rem;
-  }
-  #footer__logo {
-    max-width: 7rem;
-  }
-  #footer__name p:first-of-type {
-    font-size: 40px;
-  }
-  #footer__name .cursive {
-    font-size: 40px;
-  }
-  #social__icons {
-    gap: 2rem;
-  }
-  #social__icons img {
-    max-width: 4rem;
-  }
-}
 #contact {
   display: grid;
   gap: 4rem;
@@ -542,60 +551,39 @@ a:hover {
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 60px;
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
   }
   .main__section {
-    margin-bottom: 12rem;
+    margin-bottom: 40vh;
     padding: 0 4rem;
   }
 }
 @media screen and (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
   h1 {
-    font-size: 80px;
+    font-size: 5rem;
   }
   h2 {
-    font-size: 40px;
+    font-size: 3.5rem;
   }
   h3 {
-    font-size: 30px;
-  }
-  h4 {
-    font-size: 25px;
-  }
-  p, li {
-    font-size: 20px;
-  }
-  .undertitle {
-    font-size: 25px;
+    font-size: 2rem;
   }
   .cursive {
-    font-size: 40px;
+    font-size: 2.5rem;
+  }
+  .undertitle {
+    font-size: 1.75rem;
   }
 }
 @media screen and (min-width: 1400px) {
-  h1 {
-    font-size: 100px;
-  }
-  h2 {
-    font-size: 60px;
-  }
-  h3 {
-    font-size: 40px;
-  }
-  h4 {
-    font-size: 30px;
-  }
-  p, li {
+  html {
     font-size: 20px;
-  }
-  .undertitle {
-    font-size: 30px;
-  }
-  .cursive {
-    font-size: 50px;
-  }
-  .cta {
-    width: 20rem;
   }
 }
 @media (prefers-reduced-motion: no-preference) {

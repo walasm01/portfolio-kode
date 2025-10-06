@@ -1,8 +1,29 @@
-// VARIABLER ---------------------------------------------------
-@import 'partials/variables';
+// VARIABLER --------------------------------
+@use 'abstracts/variables';
+
+// UI ELEMENTER ----------------------------
+@use 'components/cta';
+
+@use 'components/icons';
+
+// HEADER & FOOTER ------------------------
+@use 'layout/header';
+
+@use 'layout/footer';
+
+// SEKTIONER -----------------------------
+@use 'sections/why';
+
+@use 'sections/skills';
+
+@use 'sections/projects';
+
+@use 'sections/abt';
+
+@use 'sections/contact';
+
 
 // GENEREL STYLING ------------------------------------------
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -28,68 +49,33 @@ body {
     padding: 0 $sm-space;
 }
 
-.cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-    padding: 1rem;
-    border: 2px solid $off-white;
-    border-radius: 15px;
-    width: 15rem;
-    transition: 100ms ease-in-out;
 
-    p {
-        margin-bottom: 0;
-    }
-
-    &:hover {
-        color: $off-black;
-        background-color: $off-white;
-    }
-}
-
-
-// FONTS ----------------------------------------------------
-
-h1, h2, h3 {
-    font-family: 'Climate Crisis', arial, sans-serif;
-    font-weight: 100;
-    word-wrap: break-word;
-    hyphens: auto;
-}
-h3, h4, .undertitle {
-    font-size: 20px;
-    margin-bottom: 0.5em;
-}
-h1 {
-    font-size: 40px;
-}
-h2 {
-    font-size: 35px;
-}
-h4 {
-    font-family: 'DM Sans', arial, sans-serif;
-    font-weight: 600;
-}
+// FONTS -------------------------------------------------
 p, li {
-    font-family: 'DM Sans', arial, sans-serif;
-    font-weight: 200;
+    font-family: $font-normal;
+    color: $text-color;
+    font-size: 1rem;
 }
-.undertitle {
-    font-style: italic;
-}
+
 a {
     color: $off-white;
     text-decoration: none;
 
     &:hover {
-        color: $light-blue;
+        color: $light-green;
     }
 }
+
+.undertitle {
+    color: $off-white;
+    font-style: italic;
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+}
+
 .cursive {
-    font-family: 'Aguafina Script', arial, sans-serif;
-    font-size: 30px;
+    font-family: $font-cursive;
+    font-size: 1.75rem;
     letter-spacing: 0.15em;
 }
 .cursive__red {
@@ -102,88 +88,65 @@ a {
     color: $light-blue;
 }
 
-// HEADER ----------------------------------------------
-@import 'partials/header';
-
-// CARDS -----------------------------------------------
-@import 'partials/cards';
-
-@import 'partials/why';
-
-// HVAD KAN JEG? ------------------------------------------
-@import 'partials/skills';
-@import 'partials/icons';
-
-// PROJEKTER -----------------------------------------
-@import 'partials/projects';
-
-// HVEM ER JEG? ---------------------------------------------------
-@import 'partials/abt';
-
-// FOOTER -------------------------------------------------
-@import 'partials/footer';
-
-@import 'partials/contact';
-
-// MEDIA QUERIES --------------------------------------------
+// OVERSKRIFTER ---------------------------
+h4 {
+    font-family: $font-normal;
+    font-weight: 600;
+}
+h3, h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+}
+h2 {
+    font-size: 2.25rem;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h1, h2, h3 {
+    font-family: $font-bold;
+    font-weight: 100;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+// GENERELLE MEDIA QUERIES --------------------------------------------
 @media screen and (min-width: $bp-sm) {
-    h1{
-        font-size: 60px;
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
     }
     .main__section {
-        margin-bottom: 12rem;
+        margin-bottom: 40vh;
         padding: 0 $m-space;
     }
 }
 
 @media screen and (min-width: $bp-m) {
+    html {
+        font-size: 18px;
+    }
     h1 {
-        font-size: 80px;
+        font-size: 5rem;
     }
     h2 {
-        font-size: 40px;
+        font-size: 3.5rem;
     }
     h3 {
-        font-size: 30px;
-    }
-    h4 {
-        font-size: 25px;
-    }
-    p, li {
-        font-size: 20px;
-    }
-    .undertitle {
-        font-size: 25px;
+        font-size: 2rem;
     }
     .cursive {
-        font-size: 40px;
+        font-size: 2.5rem;
+    }
+    .undertitle {
+        font-size: 1.75rem;
     }
 }
-@media screen and (min-width: $bp-lg) {
-    h1 {
-        font-size: 100px;
-    }
-    h2 {
-        font-size: 60px;
-    }
-    h3 {
-        font-size: 40px;
-    }
-    h4 {
-        font-size: 30px;
-    }
-    p, li {
-        font-size: 20px;
-    }
-    .undertitle {
-        font-size: 30px;
-    }
-    .cursive {
-        font-size: 50px;
-    }
 
-    .cta {
-        width: 20rem;
+@media screen and (min-width: $bp-lg) {
+    html {
+        font-size: 20px;
     }
 }
 
@@ -203,19 +166,4 @@ a {
             opacity: 1;
         }
     }
-
-    // .project__img--main, .project__img--secondary {
-    //     scale: 0.1;
-    //     opacity: 0;
-    //     animation: img-fade forwards;
-    //     animation-timeline: view();
-    //     animation-range-start: 10%;
-    //     animation-range-end: 40%;
-    // }
-    // @keyframes img-fade {
-    //     to {
-    //         scale: 1;
-    //         opacity: 1;
-    //     }
-    // }
 }

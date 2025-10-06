@@ -1,0 +1,26 @@
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+    border: 2px solid $off-white;
+    border-radius: 15px;
+    width: 15rem;
+    transition: 100ms ease-in-out;
+
+    p {
+        margin-bottom: 0;
+        color: $off-white;
+        font-size: 1.25rem;
+        font-style: italic;
+    }
+
+    &:hover {
+        background-color: $off-white;
+
+        p {
+            color: $off-black;
+        }
+    }
+}
