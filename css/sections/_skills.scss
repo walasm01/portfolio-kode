@@ -18,20 +18,15 @@
 
 @media screen and (min-width: abs.$bp-sm) {
     #skills {
-        gap: abs.$lg-space;
+        gap: abs.$m-space;
     }
     .skills__section {
         p {
-            max-width: 60%;
+            max-width: 70%;
             margin: 0 auto;
         }
-    }
-}
-
-@media screen and (min-width: abs.$bp-m) {
-    .skills__section {
         .icon {
-            max-width: 4rem;
+            max-width: 3.5rem;
         }
     }
 }

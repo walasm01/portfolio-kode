@@ -20,7 +20,7 @@
     margin: 0 auto;
     max-height: 75vh;
     margin-bottom: abs.$sm-space;
-    border-radius: 5px;
+    border-radius: abs.$rounded;
     border: 2px solid abs.$off-white;
     filter: drop-shadow(5px 5px 20px rgba(256, 256, 256, 0.5));
 }
@@ -31,17 +31,15 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: abs.$sm-space;
-        max-width: 50rem;
     }
-
     .abt__img {
         margin-bottom: 0;
         max-height: 50vh;
     }
 }
 
-@media screen and (min-width: abs.$bp-lg) {
-    .abt__content {
-        max-width: 70rem;
+@media screen and (min-width: abs.$bp-m) {
+    .abt__img {
+        height: 75vh;
     }
 }

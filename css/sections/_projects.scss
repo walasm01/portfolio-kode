@@ -1,23 +1,18 @@
 @use '../abstracts' as abs;
 
-#projects__title {
-    margin-bottom: abs.$m-space;
+#projects {
+    display: grid;
+    gap: abs.$m-space;
 }
 
 #projects__container--some, #projects__container--all {
     display: grid;
     gap: abs.$m-space;
-    margin-bottom: abs.$m-space;
 }
 
 .project__main {
     display: grid;
     gap: abs.$sm-space;
-
-    .project__content {
-        display: grid;
-        gap: abs.$sm-space;
-    }
 
     .icons {
         justify-content: flex-start;
@@ -25,16 +20,18 @@
     }
 
     .icon {
-        max-width: 2rem;
+        max-width: 2.5rem;
+    }
+
+    .project__content {
+        display: grid;
+        gap: abs.$sm-space;
     }
 }
 
 .project__img--main, .project__img--secondary {
     width: 100%;
-    border-radius: 5px;
-}
-.project__img--secondary {
-    max-width: 30rem;
+    border-radius: abs.$rounded;
 }
 .project__img--secondary:nth-of-type(2) {
     grid-area: 4/1/5/2;
@@ -56,33 +53,27 @@
 
 @media screen and (min-width: abs.$bp-sm) {
     .project__main {
-        gap: abs.$sm-space;
-
         .project__content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: abs.$sm-space;
-
-            .project__text {
-                align-self: center;
-            }
         }
     }
     
     .project__img--main, .project__img--secondary {
-        max-width: 100%;
         object-fit: cover;
     }
     .project__img--main {
-        height: 100vh;
+        height: 60vh;
     }
     .project__img--secondary {
-        height: 50vh;
+        height: 40vh;
     }
     .project__img--secondary:nth-of-type(2) {
         grid-area: 2/1/3/2;
     }
 
+    // LAYOUT TIL DE FORSKELLIGE PROJEKTER -----------------------------------
     #project__iba {
         .project__img--secondary {
             grid-area: 2/1/2/3;
@@ -103,29 +94,14 @@
             grid-area: 2/2/3/3;
         }
     }
-}
-
-@media screen and (min-width: abs.$bp-m) {
-    .project__main {
-        .icon {
-            max-width: 3rem;
-        }
-    }
+    // ---------------------------------------------------------------
 }
 
 @media screen and (min-width: abs.$bp-lg) {
-    #projects__title {
-        margin-bottom: abs.$m-space;
-    }
-
     .project__main {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-
         .project__content {
             grid-template-rows: 40vh 40vh;
         }
-
         .icons {
             grid-area: 1/1/2/3;
         }
@@ -141,6 +117,8 @@
         }
     }
 
+
+    // LAYOUT TIL DE FORSKELLIGE PROJEKTER ----------------------------------------
     #project__iba {
         .project__main {
             grid-template-columns: 1fr 3fr;
@@ -171,11 +149,19 @@
         }
     }
     #project__data {
+        .project__main {
+            grid-template-columns: 1fr 1.5fr;
+        }
         .project__img--secondary:nth-of-type(1) {
             grid-area: 1/1/2/2;
         }
         .project__img--secondary:nth-of-type(2) {
             grid-area: 2/2/3/3;
+        }
+    }
+    #project__harald {
+        .project__main {
+            grid-template-columns: 1fr 2fr;
         }
     }
     #project__playbook {
@@ -186,9 +172,5 @@
             grid-area: 1/1/2/3;
         }
     }
-    #project__harald {
-        .project__main {
-            grid-template-columns: 1fr 2fr;
-        }
-    }
+    // ------------------------------------------------------
 }
