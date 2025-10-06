@@ -1,6 +1,6 @@
 "use strict";
 
-import Project from "./projectClass.js";
+import Project from "./models/projectClass.js";
 
 export const greyWolf = new Project({
     projectId: "project__greywolf",
@@ -110,11 +110,12 @@ export const datasikkerhed = new Project({
     stickerImg: "img/datasikkerhed-sticker-text2.png",
 });
 
+/*
 export const harald = new Project({
     projectId: "project__harald",
     title: "HARALD TANDLÆGERNE",
     link: "https://walterliaoasmussen.dk",
-    undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
+    undertitle: "IBA Multimediedesigner</br>2. Semester, 3. Projekt",
     mainImg: "img/harald-instagram-mockup.png",
     mainAltText: "Mockup af et Harald Tandlæger instagram oplæg",
     descriptionTitle: "Flere tandlæger!",
@@ -130,12 +131,13 @@ export const harald = new Project({
     icons: ["img/figma-sticker-v2.png", "img/wordpress-sticker.png"],
     stickerImg: "img/harald-sticker-text.png"
 });
+*/
 
 export const hkPlaybook = new Project({
     projectId: "project__playbook",
     title: "HK'S AI PLAYBOOK",
-    link: "https://walterliaoasmussen.dk/datasikkerhed",
-    undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
+    link: "https://acrobat.adobe.com/id/urn:aaid:sc:EU:715ad2ae-4c16-49c8-bb4d-56911c192865",
+    undertitle: "IBA Multimediedesigner</br>3. Semester, 1. Projekt",
     mainImg: "img/playbook-monitor-mockup.png",
     mainAltText: "Mockup af HK's AI playbook på en skærm",
     descriptionTitle: "AI til fagforeningen HK",
@@ -157,4 +159,4 @@ document.addEventListener("DOMContentLoaded", () => {
     Project.allProjects.forEach(project => projectsContainerAll.insertAdjacentHTML("beforeend", project.display()));
 });
 
-import { burger } from "./burgerMenu.js";
+import { burger } from "./uiComponents/burgerMenu.js";
