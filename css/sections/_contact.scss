@@ -1,11 +1,13 @@
+@use '../abstracts' as abs;
+
 #contact {
     display: grid;
-    gap: $m-space;
+    gap: abs.$m-space;
 }
 
 .contact__section {
     display: grid;
-    gap: $sm-space;
+    gap: abs.$sm-space;
     max-width: 50rem;
     margin: 0 auto;
 

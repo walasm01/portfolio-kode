@@ -1,0 +1,16 @@
+@media (prefers-reduced-motion: no-preference) {
+    .skills__section {
+        scale: 0.5;
+        opacity: 0;
+        animation: fade-in forwards;
+        animation-timeline: view();
+        animation-range-start: entry;
+        animation-range-end: 50%;
+    }
+    @keyframes fade-in {
+        to {
+            scale: 1;
+            opacity: 1;
+        }
+    }
+}

@@ -1,20 +1,22 @@
+@use '../abstracts' as abs;
+
 #projects__title {
-    margin-bottom: $m-space;
+    margin-bottom: abs.$m-space;
 }
 
 #projects__container--some, #projects__container--all {
     display: grid;
-    gap: $m-space;
-    margin-bottom: $m-space;
+    gap: abs.$m-space;
+    margin-bottom: abs.$m-space;
 }
 
 .project__main {
     display: grid;
-    gap: $sm-space;
+    gap: abs.$sm-space;
 
     .project__content {
         display: grid;
-        gap: $sm-space;
+        gap: abs.$sm-space;
     }
 
     .icons {
@@ -40,7 +42,7 @@
 .link__sticker {
     display: flex;
     justify-self: center;
-    margin-top: $sm-space;
+    margin-top: abs.$sm-space;
     transition: 100ms ease-in-out;
 
     img {
@@ -52,14 +54,14 @@
     }
 }
 
-@media screen and (min-width: $bp-sm) {
+@media screen and (min-width: abs.$bp-sm) {
     .project__main {
-        gap: $sm-space;
+        gap: abs.$sm-space;
 
         .project__content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: $sm-space;
+            gap: abs.$sm-space;
 
             .project__text {
                 align-self: center;
@@ -103,7 +105,7 @@
     }
 }
 
-@media screen and (min-width: $bp-m) {
+@media screen and (min-width: abs.$bp-m) {
     .project__main {
         .icon {
             max-width: 3rem;
@@ -111,9 +113,9 @@
     }
 }
 
-@media screen and (min-width: $bp-lg) {
+@media screen and (min-width: abs.$bp-lg) {
     #projects__title {
-        margin-bottom: $m-space;
+        margin-bottom: abs.$m-space;
     }
 
     .project__main {

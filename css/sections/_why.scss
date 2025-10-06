@@ -1,7 +1,9 @@
+@use '../abstracts' as abs;
+
 #why {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: $bp-m;
+    max-width: abs.$bp-m;
 }

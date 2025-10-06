@@ -1,3 +1,4 @@
+@use '../abstracts' as abs;
 
 #header {
     min-height: 100vh;
@@ -7,9 +8,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $off-black;
+    background-color: abs.$off-black;
     width: 100%;
-    padding: $sm-space;
+    padding: abs.$sm-space;
     position: fixed;
     z-index: 100;
     filter: drop-shadow(0 5px 100px rgba(256, 256, 256, 0.5));
@@ -19,24 +20,24 @@
     }
 
     #navbar__burger {
-        color: $off-white;
+        color: abs.$off-white;
         font-size: 2rem;
     }
 
     #navbar__menu {
         display: none;
         flex-direction: column;
-        gap: $sm-space;
+        gap: abs.$sm-space;
         position: absolute;
         top: 100%;
         right: 0;
         width: 100vw;
         height: 100vh;
-        background-color: $off-black;
-        padding-left: $sm-space;
+        background-color: abs.$off-black;
+        padding-left: abs.$sm-space;
 
         li {
-            font-family: 'Climate Crisis', arial, sans-serif;
+            font-family: abs.$font-bold;
             font-size: 25px;
             list-style-type: none;
         }
@@ -48,12 +49,12 @@
 }
 
 #hero {
-    padding: 12rem $sm-space;
+    padding: 12rem abs.$sm-space;
 }
 
-@media screen and (min-width: $bp-sm) {
+@media screen and (min-width: abs.$bp-sm) {
     #navbar {
-        padding: $sm-space $m-space;
+        padding: abs.$sm-space abs.$m-space;
 
         #navbar__logo {
             max-width: 4rem;
@@ -79,12 +80,12 @@
     }
 
     #hero {
-        padding: 15rem $m-space;
+        padding: 15rem abs.$m-space;
     }
 }
 
 
-@media screen and (min-width: $bp-m) {
+@media screen and (min-width: abs.$bp-m) {
     #navbar {
         #navbar__logo {
             max-width: 6rem;

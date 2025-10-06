@@ -1,34 +1,36 @@
+@use '../abstracts' as abs;
+
 #abt {
-    max-width: $bp-m;
+    max-width: abs.$bp-m;
     margin-left: auto;
     margin-right: auto;
 }
 
 #abt__title {
-    margin-bottom: $m-space;
+    margin-bottom: abs.$m-space;
 }
 
 #abt__container {
     display: grid;
-    gap: $m-space;
+    gap: abs.$m-space;
 }
 
 .abt__img {
     display: block;
     margin: 0 auto;
     max-height: 75vh;
-    margin-bottom: $sm-space;
+    margin-bottom: abs.$sm-space;
     border-radius: 5px;
-    border: 2px solid $off-white;
+    border: 2px solid abs.$off-white;
     filter: drop-shadow(5px 5px 20px rgba(256, 256, 256, 0.5));
 }
 
 
-@media screen and (min-width: $bp-sm) {
+@media screen and (min-width: abs.$bp-sm) {
     .abt__content {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        column-gap: $sm-space;
+        column-gap: abs.$sm-space;
         max-width: 50rem;
     }
 
@@ -38,7 +40,7 @@
     }
 }
 
-@media screen and (min-width: $bp-lg) {
+@media screen and (min-width: abs.$bp-lg) {
     .abt__content {
         max-width: 70rem;
     }

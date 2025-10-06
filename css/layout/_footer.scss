@@ -1,12 +1,19 @@
+@use '../abstracts' as abs;
+
 #footer {
     display: grid;
-    gap: $sm-space;
-    padding: $sm-space; 
+    gap: abs.$sm-space;
+    padding: abs.$sm-space; 
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
 }
 
 #footer__title {
     display: flex;
-    gap: $sm-space;
+    gap: 1rem;
     align-items: flex-start;
 }
 
@@ -16,77 +23,81 @@
 }
 
 #footer__name {
-
     p:first-of-type {
-        font-family: 'Climate Crisis', arial, sans-serif;
-        font-size: 16px;
+        font-family: abs.$font-bold;
+        color: abs.$off-white;
     }
     .cursive {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
 #social__icons {
+    display: flex;
+    gap: 1rem;
+
     img {
-        max-width: 3rem;
+        max-width: 2.5rem;
     }
 }
 
-@media screen and (min-width: $bp-sm) {
+@media screen and (min-width: abs.$bp-sm) {
     #footer {
-        padding: $m-space;
-        grid-template-columns: 1fr 1fr 1.5fr;
+        padding: abs.$m-space;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     #footer__title {
         grid-area: 1/1/2/4;
+    }
+    #footer__logo {
+        max-width: 4rem;
+    }
+    #footer__name {
+        p:first-of-type {
+            font-size: 1.5rem;
+        }
+        .cursive {
+            font-size: 1.5rem;
+        }
+    }
+    #footer__social {
+        margin: 0 auto;
+        #social__icons {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: abs.$bp-m) {
+    #footer {
+        padding: abs.$lg-space abs.$m-space;
+        gap: abs.$sm-space;
+    }
+}
+
+@media screen and (min-width: abs.$bp-lg) {
+    #footer {
+        padding: abs.$lg-space 12rem;
+        gap: abs.$m-space;
+    }
+    #footer__title {
+        gap: abs.$sm-space;
     }
     #footer__logo {
         max-width: 5rem;
     }
     #footer__name {
         p:first-of-type {
-            font-size: 30px;
+            font-size: 2rem;
         }
         .cursive {
-            font-size: 30px;
-        }
-    }
-    #footer__social {
-        margin: 0 auto;
-    }
-     #social__icons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-}
-
-@media screen and (min-width: $bp-m) {
-    #footer {
-        padding: $lg-space 10rem;
-        gap: $m-space;
-    }
-}
-
-@media screen and (min-width: $bp-lg) {
-    #footer {
-        padding: $lg-space 15rem;
-    }
-    #footer__logo {
-        max-width: 7rem;
-    }
-    #footer__name {
-        p:first-of-type {
-            font-size: 40px;
-        }
-        .cursive {
-            font-size: 40px;
+            font-size: 2rem;
         }
     }
      #social__icons {
-        gap: 2rem;
+        
         img {
-            max-width: 4rem;
+            max-width: 3rem;
         }
     }
 }
