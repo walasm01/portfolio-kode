@@ -8,17 +8,20 @@
 .contact__section {
     display: grid;
     gap: abs.$sm-space;
-    max-width: 50rem;
+    max-width: abs.$bp-sm;
     margin: 0 auto;
 
     h2 {
         text-align: center;
     }
 
+    p, li {
+        font-size: 1.25rem;
+    }
+
 }
 
 #contact__intro {
-
     img {
         margin: 0 auto;
     }
@@ -26,4 +29,10 @@
 
 #contact__container {
     text-align: center;
+
+    p {
+        font-size: 2rem;
+        margin-bottom: 1em;
+        color: abs.$off-white;
+    }
 }

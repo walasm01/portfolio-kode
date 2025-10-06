@@ -94,7 +94,7 @@
 }
 #navbar #navbar__menu li {
   font-family: "Climate Crisis", arial, sans-serif;
-  font-size: 25px;
+  font-size: 1.75rem;
   list-style-type: none;
 }
 #navbar #navbar__menu.active {
@@ -103,6 +103,9 @@
 
 #hero {
   padding: 12rem 2rem;
+}
+#hero .cursive {
+  font-size: 2.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,7 +128,7 @@
     padding-left: 0;
   }
   #navbar #navbar__menu li {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
   #hero {
     padding: 15rem 4rem;
@@ -133,10 +136,10 @@
 }
 @media screen and (min-width: 1024px) {
   #navbar #navbar__logo {
-    max-width: 6rem;
+    max-width: 5rem;
   }
   #navbar #navbar__menu li {
-    font-size: 35px;
+    font-size: 1.75rem;
   }
 }
 #footer {
@@ -415,6 +418,9 @@
   display: block;
   margin: 0 auto;
   max-height: 75vh;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 2rem;
   border-radius: 10px;
   border: 2px solid hsl(0, 0%, 90%);
@@ -424,7 +430,7 @@
 @media screen and (min-width: 768px) {
   .abt__content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
@@ -446,11 +452,14 @@
 .contact__section {
   display: grid;
   gap: 2rem;
-  max-width: 50rem;
+  max-width: 768px;
   margin: 0 auto;
 }
 .contact__section h2 {
   text-align: center;
+}
+.contact__section p, .contact__section li {
+  font-size: 1.25rem;
 }
 
 #contact__intro img {
@@ -459,6 +468,11 @@
 
 #contact__container {
   text-align: center;
+}
+#contact__container p {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  color: hsl(0, 0%, 90%);
 }
 
 * {

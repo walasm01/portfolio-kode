@@ -19,6 +19,8 @@
     display: block;
     margin: 0 auto;
     max-height: 75vh;
+    max-width: 100%;
+    object-fit: cover;
     margin-bottom: abs.$sm-space;
     border-radius: abs.$rounded;
     border: 2px solid abs.$off-white;
@@ -29,7 +31,7 @@
 @media screen and (min-width: abs.$bp-sm) {
     .abt__content {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1.5fr;
         column-gap: abs.$sm-space;
     }
     .abt__img {
