@@ -1,14 +1,22 @@
+
+
+// Animationerne skal kun spille, hvis der ikke er en preference for reduceret bevægelse
 @media (prefers-reduced-motion: no-preference) {
+    // Dette er en animation for skills-sektionerne til at fade ind.
     .skills__section {
+        // Sektionerne starter usynlige i halv størrelse.
         scale: 0.5;
         opacity: 0;
+        // Forwards gør at sektionerne forbliver på skærmen efter animationen er endt.
         animation: fade-in forwards;
+        // Animationen starter, når sektionerne kommer ind på skærmen, og ender når de er halvt over skærmen.
         animation-timeline: view();
         animation-range-start: entry;
         animation-range-end: 50%;
     }
     @keyframes fade-in {
         to {
+            // Sektionerne ender med at være synlige i normal størrelse.
             scale: 1;
             opacity: 1;
         }

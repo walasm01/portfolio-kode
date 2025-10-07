@@ -1,7 +1,11 @@
 "use strict";
 
+// Denne JS-fil tilhører projects.html 
+
+// Jeg importerer Project skabelonen
 import Project from "./models/projectClass.js";
 
+// Jeg bruger Project skabelonen til at lave mine projekter. Jeg exporterer dem, hvis nu jeg vil bruge dem i en af de andre sider.
 export const greyWolf = new Project({
     projectId: "project__greywolf",
     title: "GREY WOLF",
@@ -111,6 +115,8 @@ export const datasikkerhed = new Project({
 });
 
 /*
+Dette projekt har jeg kommenteret ud, fordi der er problemer med den tilhørende hjemmeside. Når jeg har fikset hjemmesiden, så kan jeg bare fjerne kommenteringen, og så placeres projektet automatisk på projekter-siden.
+
 export const harald = new Project({
     projectId: "project__harald",
     title: "HARALD TANDLÆGERNE",
@@ -154,11 +160,16 @@ export const hkPlaybook = new Project({
     stickerImg: "img/hk-sticker-text.png",
 });
 
+// Når siden loades placeres alle projekter på projekter-siden i den rette container.
 document.addEventListener("DOMContentLoaded", () => {
+    // Containeren findes i DOM
     const projectsContainerAll = document.getElementById("projects__container--all");
+    // Jeg sikrer mig først at containeren findes i DOM
     if (projectsContainerAll) {
+        // Hvis containeren findes, så itereres der igennem min allProjects-array, som alle projekterne er pushed til, og så bruges display()-metoden på dem alle lige før containerens end-tag. Så bliver de placeret i kronologisk rækkefølge.
         Project.allProjects.forEach(project => projectsContainerAll.insertAdjacentHTML("beforeend", project.display()));
     };
 });
 
+// Burgeren importeres
 import { burgerControls } from "./uiComponents/burgerMenu.js";

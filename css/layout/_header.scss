@@ -1,9 +1,12 @@
+// Jeg henter variablerne, og kalder dem under ét navn "abs"
 @use '../abstracts' as abs;
 
+// Headeren (nav og hero) skal fylde hele skærmen
 #header {
     min-height: 100vh;
 }
 
+// Styling til navigationsbaren
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -30,6 +33,7 @@
         }
     }
 
+    // Da jeg laver phone-first, er navbarens menu ikke synlig til at starte med, Den skal kun være synlig efter man har trykket på burgeren. Dette sker i JS (Se uiComponents/burgerMenu.js)
     #navbar__menu {
         display: none;
         flex-direction: column;
@@ -48,16 +52,19 @@
             list-style-type: none;
         }
 
+        // Når #navbar__menu får class="active" vha. JS, så får den display:flex, så den nu er synlig
         &.active {
             display: flex;
         }
     }
 }
 
+// Styling til Hero
 #hero {
     padding: 12rem abs.$sm-space;
 }
 
+// Responsiv styling
 @media screen and (min-width: abs.$bp-sm) {
     #navbar {
         padding: abs.$sm-space abs.$m-space;
@@ -66,10 +73,10 @@
             max-width: 4rem;
         }
 
+        // Når skærmen når det første globale breakpoint $bp-sm (768px), så skal burgermenuen være usynlig, og der skal bare være en almindelig navigationsbar istedet
         #navbar__burger {
             display: none;
         }
-
         #navbar__menu {
             display: flex;
             flex-direction: row;
@@ -84,7 +91,6 @@
             }
         }
     }
-
     #hero {
         padding: 15rem abs.$m-space;
 
@@ -94,7 +100,7 @@
     }
 }
 
-
+// Mere responsiv styling
 @media screen and (min-width: abs.$bp-m) {
     #navbar {
         #navbar__logo {

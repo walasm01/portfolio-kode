@@ -1,5 +1,8 @@
+// Jeg henter variablerne, og kalder dem under ét navn "abs"
 @use '../abstracts' as abs;
 
+// Generel Styling for værktøjsikoner. De får deres egne settings i forskellige sektioner.
+// Container for både ikoner og potentiel text
 .icons {
     display: flex;
     justify-content: center;
@@ -8,12 +11,12 @@
     gap: 1rem;
     padding-top: abs.$sm-space;
 }
+// Container kun for ikoner
 .icons__container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
-
 .icon {
     object-fit: contain;
 }

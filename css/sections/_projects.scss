@@ -1,15 +1,22 @@
+// Jeg henter variablerne, og kalder dem under ét navn "abs"
 @use '../abstracts' as abs;
+
+// Stylesheet til projekterne
 
 #projects {
     display: grid;
     gap: abs.$m-space;
 }
 
+// Styling til de to containere, der skal holde projekterne.
+// --some har kun nogle af projekterne
+// --all har alle projekterne
 #projects__container--some, #projects__container--all {
     display: grid;
     gap: abs.$m-space;
 }
 
+// Dette er en større container for indholdet af et projekt. Det inkluderer værktøjsikonerne, Det store billede, de små billeder og teksten
 .project__main {
     display: grid;
     gap: abs.$sm-space;
@@ -18,24 +25,28 @@
         justify-content: flex-start;
         padding: 0;
     }
-
     .icon {
         max-width: 2.5rem;
     }
 
+    // Denne container indeholde de små billeder og teksten
     .project__content {
         display: grid;
         gap: abs.$sm-space;
     }
 }
 
+// Styling for begge typer projekt-billeder
 .project__img--main, .project__img--secondary {
     width: 100%;
     border-radius: abs.$rounded;
 }
+// Billederne kommer ind lige efter hinanden, fordi i JS skrives de ind i en array, så de itereres igennem (Se models/projectClass.js). Derfor bruger jeg griddet til at placere billederne, hvor jeg vil have dem.
 .project__img--secondary:nth-of-type(2) {
     grid-area: 4/1/5/2;
 }
+
+// Dette er klistermærket, man trykker på for at komme ind på projekternes tilhørende hjemmesider og prototyper.
 .link__sticker {
     display: flex;
     justify-self: center;
@@ -46,20 +57,23 @@
         width: 12rem;
     }
 
+    // Hover på klistermærkerne
     &:hover {
         scale: 1.15;
     }
 }
 
+// Responsiv styling
 @media screen and (min-width: abs.$bp-sm) {
     .project__main {
+        // Der er nu plads nok til at det meste af indholdet kan komme i et 2x2 grid.
         .project__content {
-            display: grid;
             grid-template-columns: 1fr 1fr;
             gap: abs.$sm-space;
         }
     }
     
+    // Styling til billedernes størrelser og placering
     .project__img--main, .project__img--secondary {
         object-fit: cover;
     }
@@ -73,13 +87,8 @@
         grid-area: 2/1/3/2;
     }
 
-    // LAYOUT TIL DE FORSKELLIGE PROJEKTER -----------------------------------
-    #project__iba {
-        .project__img--secondary {
-            grid-area: 2/1/2/3;
-        }
-    }
-    #project__playbook {
+    // Da det er forskelligt hvor mange billeder, der er ved hvert projekt, OG jeg gerne vil have en slags naturlig kaos i hvordan billederne sættes op i forhold til teksten, OG teksten gerne skal kunne passe i dets grid, så laver jeg "skræddersyet" styling til hvert projekt, hvor jeg bestemmer billedernes størrelser og placeringer -------------------------------------------------------------------------------
+    #project__iba, #project__playbook {
         .project__img--secondary {
             grid-area: 2/1/2/3;
         }
@@ -94,9 +103,10 @@
             grid-area: 2/2/3/3;
         }
     }
-    // ---------------------------------------------------------------
+    // --------------------------------------------------------------------------
 }
 
+// Mere responsiv styling
 @media screen and (min-width: abs.$bp-lg) {
     .project__main {
         .project__content {
@@ -118,7 +128,7 @@
     }
 
 
-    // LAYOUT TIL DE FORSKELLIGE PROJEKTER ----------------------------------------
+    // Her er der mere "skræddersyet" styling til hvert projekt ---------------------------------------------------------------------------
     #project__iba {
         .project__main {
             grid-template-columns: 1fr 3fr;
@@ -172,5 +182,5 @@
             grid-area: 1/1/2/3;
         }
     }
-    // ------------------------------------------------------
+    // -----------------------------------------------------------------------
 }

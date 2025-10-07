@@ -1,8 +1,11 @@
 "use strict";
 
+// Dette er en skabelon for alle projekterne
 export default class Project {
+    // Jeg laver en array til alle projekterne
     static allProjects = [];
 
+    // Her er alle de måder hvorpå projekterne differentierer sig, altså de bestemte egenskaber for alle projekterne
     constructor({
         projectId,
         title, 
@@ -34,9 +37,11 @@ export default class Project {
         this.icons = icons;
         this.stickerImg = stickerImg;
 
+        // Når et instance af et Project laves, så bliver det pushed til min allProjects-array. Dette gøres, så jeg kan display hvert projekt automatisk uden at skulle kalde display()-metoden hver gang.
         Project.allProjects.push(this);
     }
 
+    // Display()-metoden for hvordan projektet skal skrives ind med HTML
     display() {
         return `
         <section id="${this.projectId}" class="project">

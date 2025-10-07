@@ -1,20 +1,21 @@
+// Jeg henter variablerne, og kalder dem under ét navn "abs"
 @use '../abstracts' as abs;
+
+// Stylesheet til hvem-sektionen
 
 #abt {
     max-width: abs.$bp-m;
     margin-left: auto;
     margin-right: auto;
 }
-
 #abt__title {
     margin-bottom: abs.$m-space;
 }
-
 #abt__container {
     display: grid;
     gap: abs.$m-space;
 }
-
+// Styling af billederne
 .abt__img {
     display: block;
     margin: 0 auto;
@@ -27,7 +28,7 @@
     filter: drop-shadow(5px 5px 20px rgba(256, 256, 256, 0.5));
 }
 
-
+// Responsiv styling
 @media screen and (min-width: abs.$bp-sm) {
     .abt__content {
         display: grid;
@@ -39,7 +40,7 @@
         max-height: 50vh;
     }
 }
-
+// Ditto
 @media screen and (min-width: abs.$bp-m) {
     .abt__img {
         height: 75vh;

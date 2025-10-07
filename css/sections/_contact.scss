@@ -1,10 +1,14 @@
+// Jeg henter variablerne, og kalder dem under ét navn "abs"
 @use '../abstracts' as abs;
+
+// Stylesheet til kontakt-siden.
 
 #contact {
     display: grid;
     gap: abs.$m-space;
 }
 
+// Generel styling til alle kontakt-sektioner
 .contact__section {
     display: grid;
     gap: abs.$sm-space;
@@ -20,12 +24,12 @@
     }
 }
 
+// Enkeltvis styling til de forskellige sektioner
 #contact__intro {
     img {
         margin: 0 auto;
     }
 }
-
 #contact__container {
     text-align: center;
 
@@ -35,7 +39,12 @@
         color: abs.$off-white;
     }
 }
+#cv__text {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
 
+// Responsiv styling
 @media screen and (min-width: abs.$bp-sm) {
     .contact__section {
         p, li {

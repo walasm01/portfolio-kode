@@ -1,21 +1,25 @@
+// Farver
 $light-red: #FF8687;
 $light-green: #91FF72;
 $light-blue: #8FCFFF;
-
 $off-black: #000222;
 $off-white: hsl(0, 0%, 90%);
 $text-color: hsl(0, 0%, 70%);
 
+// FOnte
 $font-bold: 'Climate Crisis', arial, sans-serif;
 $font-normal: 'DM Sans', arial, sans-serif;
 $font-cursive: 'Aguafina Script', arial, sans-serif; 
 
+// Spacing
 $sm-space: 2rem;
 $m-space: 4rem;
 $lg-space: 8rem;
 
+// Globale breakpoints til media queries
 $bp-sm: 768px;
 $bp-m: 1024px;
 $bp-lg: 1400px;
 
+// Til border-radius
 $rounded: 10px;

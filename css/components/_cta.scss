@@ -1,5 +1,7 @@
+// Jeg henter variablerne, og kalder dem under ét navn "abs"
 @use '../abstracts' as abs;
 
+// Styling for CTA'erne
 .cta {
     display: flex;
     justify-content: center;
@@ -11,6 +13,7 @@
     width: 15rem;
     transition: 100ms ease-in-out;
 
+    // Text i CTA
     p {
         margin-bottom: 0;
         color: abs.$off-white;
@@ -18,6 +21,7 @@
         font-style: italic;
     }
 
+    // Når man hover over CTA
     &:hover {
         background-color: abs.$off-white;
 

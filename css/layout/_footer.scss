@@ -1,5 +1,7 @@
+// Jeg henter variablerne, og kalder dem under ét navn "abs"
 @use '../abstracts' as abs;
 
+// Styling for footer
 #footer {
     display: grid;
     gap: abs.$sm-space;
@@ -11,17 +13,17 @@
     }
 }
 
+// "name-tag" for footeren
 #footer__title {
     display: flex;
     gap: 1rem;
     align-items: flex-start;
 }
-
+// Disse hører under #footer__title. Jeg vil dog ikke skabe unødvendig nesting. Derfor står de uden for deres container
 #footer__logo {
     max-width: 3rem;
     object-fit: contain;
 }
-
 #footer__name {
     p:first-of-type {
         font-family: abs.$font-bold;
@@ -31,7 +33,7 @@
         font-size: 1rem;
     }
 }
-
+// Ikoner for sociale medier i footeren
 #social__icons {
     display: flex;
     gap: 1rem;
@@ -41,6 +43,7 @@
     }
 }
 
+// Justeringer for at gøre footeren responsiv
 @media screen and (min-width: abs.$bp-sm) {
     #footer {
         padding: abs.$m-space;
@@ -67,14 +70,14 @@
         }
     }
 }
-
+// Ditto
 @media screen and (min-width: abs.$bp-m) {
     #footer {
         padding: abs.$lg-space abs.$m-space;
         gap: abs.$sm-space;
     }
 }
-
+// Ditto
 @media screen and (min-width: abs.$bp-lg) {
     #footer {
         padding: abs.$lg-space 12rem;

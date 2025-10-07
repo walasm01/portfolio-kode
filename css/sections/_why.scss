@@ -1,5 +1,7 @@
+// Jeg henter variablerne, og kalder dem under ét navn "abs"
 @use '../abstracts' as abs;
 
+// Styling til Hvorfor-sektionen.
 #why {
     min-height: 100vh;
     display: flex;
