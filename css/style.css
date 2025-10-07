@@ -356,7 +356,7 @@
     width: 16rem;
   }
   .link__sticker:hover {
-    scale: 1.5;
+    scale: 1.2;
   }
   #project__iba .project__main {
     grid-template-columns: 1fr 3fr;
