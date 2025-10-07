@@ -237,17 +237,13 @@
   }
 }
 #why {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   max-width: 1024px;
 }
 
 #skills {
   display: grid;
   gap: 4rem;
-  max-width: 1400px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -564,11 +560,11 @@ h3, h4 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h1, h2, h3 {
