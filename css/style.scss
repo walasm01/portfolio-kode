@@ -145,9 +145,3 @@ h1, h2, h3 {
         font-size: 1.75rem;
     }
 }
-
-@media screen and (min-width: abs.$bp-lg) {
-    html {
-        font-size: 20px;
-    }
-}
