@@ -11,7 +11,7 @@ export const greyWolf = new Project({
     title: "GREY WOLF",
     link: "https://www.figma.com/proto/H00JvqqRyUImhthIwhwUkb/Grey-Wolf?page-id=29%3A140&node-id=161-265&p=f&viewport=-615%2C222%2C0.08&t=PBuzx0SsAxs2FT1n-1&scaling=scale-down&content-scaling=fixed",
     undertitle: "IBA Multimediedesigner</br>1. Semester, 1. Projekt",
-    mainImg: "img/gw-double-phone-mockup.png",
+    mainImg: "img/gw-double-phone-mockup.jpg",
     mainAltText: "Grey Wolf hjemmeside vist på to telefoner",
     descriptionTitle: "Bæredygtig tøjvirksomhed",
     description: 
@@ -20,7 +20,7 @@ export const greyWolf = new Project({
         <li>Målgrupperesearch vha. real-life interviews</li>
         <li>Udvikling af Grey Wolf-brandet baseret på bæredygtighedstemaet</li>
         <li>En high-fidelity visuel mobil prototype udarbejdet i figma</li>`,
-    secImgs: ["img/gw-jacket-mockup.png", "img/gw-label-mockup.png"],
+    secImgs: ["img/gw-jacket-mockup.jpg", "img/gw-label-mockup.jpg"],
     resultTitle: "Fra Roskildetelt til udendørstøj",
     result: 
         "Grey Wolf har et tæt samarbejde med Roskilde Festival, hvor de indsamler de efterladte festivaltelte, og bruger materialet til at lave langtidsholdbart udendørstøj. I gruppen havde vi et tæt samarbejde, men hvor vi hver især havde vores egne fokusområder. Jeg havde et stort ansvar i udviklingen af Grey Wolfs brandidentitet og deres visuelle udtryk på figma-prototypen.",
@@ -33,7 +33,7 @@ export const ibaVidensbank = new Project({
     title: "IBA VIDENSBANK",
     link: "https://walterliaoasmussen.dk/iba-vidensbank/",
     undertitle: "IBA Multimediedesigner</br>1. Semester, 2. Projekt",
-    mainImg: "img/iba-vidensbank-phone-mockup.png",
+    mainImg: "img/iba-vidensbank-phone-mockup.jpg",
     mainAltText: "Iba's vidensbank vist på en skærm",
     descriptionTitle: "En webtilgængelig vidensbank",
     description: 
@@ -42,7 +42,7 @@ export const ibaVidensbank = new Project({
         <li>Reasearch af målgruppens behov via. spørgeskema</li>
         <li>Kodning i HTML og CSS med fokus på webtilgængelighed og responsivitet</li>
         <li>Brugertest til fejlfinding og forbedring af hjemmesiden</li>`,
-    secImgs: ["img/iba-vidensbank-monitor-mockup.png"],
+    secImgs: ["img/iba-vidensbank-monitor-mockup.jpg"],
     resultTitle: "Brugervenlighed og responsivitet",
     result: 
         "Projektet endte i en fuldt funktionel hjemmeside opbygget med HTML og CSS, som jeg kalder for “IBA's Vidensbank”. Gennem testing og iterativ forbedring er den blevet brugervenlig, fuldt responsiv og mere eller mindre webtilgængelig. Havde jeg haft mere tid til opgaven, havde jeg lagt mere fokus på at forbedre webtilgængeligheden.",
@@ -55,7 +55,7 @@ export const godsetUng = new Project({
     title: "GODSET UNG",
     link: "https://walterliaoasmussen.dk/godset-ung/",
     undertitle: "IBA Multimediedesigner</br>1. Semester, 3. Projekt",
-    mainImg: "img/godset-poster-mockup.png",
+    mainImg: "img/godset-poster-mockup.jpg",
     mainAltText: "En plakat for Godset Ung",
     descriptionTitle: "En forlængelse af Godset",
     description: 
@@ -63,7 +63,7 @@ export const godsetUng = new Project({
     descriptionList: `
         <li>Udvikling af Godset Ung-konceptet som forlængelse af Godset</li>
         <li>Responsiv kodning i HTML og CSS af en webplatform for Godset Ung</li>`,
-    secImgs: ["img/godset-double-phone-mockup.png", "img/godset-plector-mockup.png"],
+    secImgs: ["img/godset-double-phone-mockup.jpg", "img/godset-plector-mockup.jpg"],
     resultTitle: "Kaos Kaos Kaos",
     result: 
         "Vi endte med at kode en prototype til en social platform, som vi kaldte for Godset Ung. På denne sociale platform samles Danmarks musikinteresserede unge, hvor de kan dele deres fælles interesser for musik. Derudover udviklede vi en idé til et alkoholfrit event på Godset, som vi kaldte for Kaos Band, hvor unge ville samles over en weekend for at koordinere en musikalsk performance.",
@@ -76,7 +76,7 @@ export const cameleonCreative = new Project({
     title: "CAMELEON CREATIVE",
     link: "https://www.figma.com/proto/sbqT4mJCSFvGOB05ujexYz/Branding-Projekt?page-id=724%3A1085&node-id=887-1573&p=f&viewport=479%2C820%2C0.05&t=yCMFLZnLU3YHy1Sz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=887%3A1573",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 1. Projekt",
-    mainImg: "img/cc-phone-and-pc-mockup.png",
+    mainImg: "img/cc-phone-and-pc-mockup.jpg",
     mainAltText: "Cameleon Creative hjemmeside på PC og mobil",
     descriptionTitle: "Et Multimediebureau",
     description: 
@@ -85,7 +85,7 @@ export const cameleonCreative = new Project({
         <li>Udarbejdelse af visuelle elementer for brandet, såsom logo, lavet i Adobe Illustrator</li>
         <li>En high-fidelity visuel prototype af et responsivt website på figma</li>
         <li>En designmanual for vores brand, lavet i Adobe InDesign</li>`,
-    secImgs: ["img/cc-visitkort.png", "img/cc-designguide-mockup.png"],
+    secImgs: ["img/cc-visitkort.jpg", "img/cc-designguide-mockup.jpg"],
     resultTitle: "Den kreative kamæleon",
     result: 
         "Resultatet blev et farverigt og energisk brand for vores multimediebureau, som vi kalder for Cameleon Creative. Jeg havde et større ansvar i at udvikle brandets visuelle identitet, hvilket indebar farvevalg, fonte, udarbejdelse af logo mm. Alle disse elementer skulle jeg forbinde til en konkret og konsistent visuel brandidentitet, som kommer til udtryk i figma prototypen.",
@@ -98,7 +98,7 @@ export const datasikkerhed = new Project({
     title: "SPILLET OM DATASIKKERHED",
     link: "https://walterliaoasmussen.dk/datasikkerhed",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 2. Projekt",
-    mainImg: "img/datasikkerhed-laptop-and pc-mockup-v3.png",
+    mainImg: "img/datasikkerhed-laptop-and pc-mockup-v3.jpg",
     mainAltText: "Spillet om datasikkerhed på PC og mobil",
     descriptionTitle: "Branching Scenarier",
     description: 
@@ -106,7 +106,7 @@ export const datasikkerhed = new Project({
     descriptionList: `
         <li>Brainstorming og sketching af branching scenarier</li>
         <li>Iterativ og responsiv kodning med HTML, CSS og JavaScript</li>`,
-    secImgs: ["img/datasikkerhed-branching.jpg", "img/datasikkerhed-phone-mockup.png"],
+    secImgs: ["img/datasikkerhed-branching.jpg", "img/datasikkerhed-phone-mockup.jpg"],
     resultTitle: "Ik fald for fup!",
     result: 
         "Jeg endte med at lave et spil om datasikkerhed, hvor man ville blive præsenteret for forskellige “Smishing” (SMS phishing) scenarier med forskellige svarmuligheder. Ud fra hvad man svarede kunne man få 6 forskellige slutninger.",
@@ -122,7 +122,7 @@ export const harald = new Project({
     title: "HARALD TANDLÆGERNE",
     link: "https://walterliaoasmussen.dk",
     undertitle: "IBA Multimediedesigner</br>2. Semester, 3. Projekt",
-    mainImg: "img/harald-instagram-mockup.png",
+    mainImg: "img/harald-instagram-mockup.jpg",
     mainAltText: "Mockup af et Harald Tandlæger instagram oplæg",
     descriptionTitle: "Flere tandlæger!",
     description: 
@@ -130,7 +130,7 @@ export const harald = new Project({
     descriptionList: `
         <li>Udarbejdelse af en hjemmeside prototype med WordPress med fokus på SEO</li>
         <li>Udarbejdelse af forskellige kampagner til sociale medier med figma</li>`,
-    secImgs: ["img/harald-tote-bag.png", "img/harald-monitor-mockup2.png"],
+    secImgs: ["img/harald-tote-bag.jpg", "img/harald-monitor-mockup2.jpg"],
     resultTitle: "Haralds nye SEO Wordpress side",
     result: 
         "Som løsning til projektet endte vi med at lave en SEO WordPress hjemmeside til Harald Tandlægerne, som beholdte de fleste designelementer af deres eksisterende hjemmeside, men hvor vi prøvede at give den et mere simpelt og moderne udtryk. Derudover fik vi lavet noget SoMe content for at tiltrække den yngre målgruppe af tandlægestuderende.",
@@ -144,7 +144,7 @@ export const hkPlaybook = new Project({
     title: "HK'S AI PLAYBOOK",
     link: "https://acrobat.adobe.com/id/urn:aaid:sc:EU:715ad2ae-4c16-49c8-bb4d-56911c192865",
     undertitle: "IBA Multimediedesigner</br>3. Semester, 1. Projekt",
-    mainImg: "img/playbook-monitor-mockup.png",
+    mainImg: "img/playbook-monitor-mockup.jpg",
     mainAltText: "Mockup af HK's AI playbook på en skærm",
     descriptionTitle: "AI til fagforeningen HK",
     description: 
@@ -152,7 +152,7 @@ export const hkPlaybook = new Project({
     descriptionList: `
         <li>Prompt-engineering for effektivisering af vores samarbejde med AI</li>
         <li>Udarbejdelse af en playbook, der effektivt formidler information om AI</li>`,
-    secImgs: ["img/playbook-book-mockup.png"],
+    secImgs: ["img/playbook-book-mockup.jpg"],
     resultTitle: "I samarbejde med AI",
     result: 
         "I dette projekt fik vi lavet en AI Playbook, der formidlede information om ansvarligt og effektivt brug af AI i HK's arbejde med webinarer og kurser. Vi har i processen arbejdet ekstensivt med prompt-engineering for at få mest ud af vores AI brug som muligt. Jeg havde til ansvar at opsætte al den information, vi ville formidle i playbooken, på en letlæselig og overskuelig måde med Adobe InDesign.",
